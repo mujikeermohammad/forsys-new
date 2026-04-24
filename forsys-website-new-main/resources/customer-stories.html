@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Success Stories | Forsys — Lead-to-Revenue Transformation</title>
+  <meta name="description" content="Explore how leading enterprises across Hi-Tech, Manufacturing, Financial Services, and Healthcare transformed their Lead-to-Revenue operations with Forsys.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/resources.css">
+  <style>
+    /* ── Section header shared ─────────────────────────────── */
+    .res-section-label {
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+
+    .res-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 0;
+    }
+
+    .res-section-header {
+      margin-bottom: 48px;
+    }
+
+    /* ── Featured section override ─────────────────────────── */
+    .res-featured .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── Grid section override ─────────────────────────────── */
+    .res-grid-section .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── Read More link inside card ────────────────────────── */
+    .res-card-read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: Inter, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--purple);
+      text-decoration: none;
+      margin-top: 12px;
+      transition: gap 0.15s ease;
+    }
+
+    .res-card-read-more:hover { gap: 8px; }
+    .res-card-read-more:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; border-radius: 2px; }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .res-featured .container,
+      .res-grid-section .container { padding: 0 32px; }
+    }
+
+    @media (max-width: 720px) {
+      .res-featured .container,
+      .res-grid-section .container { padding: 0 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .res-card-read-more { transition: none; }
+    }
+  </style>
+</head>
+<body class="page-resources">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+      </a>
+      <div class="nav-center" role="menubar">
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="mega-menu mega-menu--wide" role="menu">
+            <div class="mega-grid mega-grid--wwd">
+              <div class="mega-col">
+                <div class="mega-col-title">Business Advisory</div>
+                <ul>
+                  <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                  <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                  <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                  <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+                <ul>
+                  <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                  <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                  <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+                <ul>
+                  <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                  <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                  <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                  <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+                </ul>
+                <div class="mega-sub-divider"></div>
+                <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+                <ul>
+                  <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                  <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                  <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                  <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation — AIStudio</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Services</div>
+                <div class="mega-sub-header">Technology</div>
+                <ul>
+                  <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                  <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                  <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                  <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                  <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--managed">
+                <div class="mega-col-title">AI Managed Services</div>
+                <ul><li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li></ul>
+              </div>
+              <div class="mega-col mega-col--ai">
+                <div class="mega-col-title">Forsys AI Solutions</div>
+                <ul>
+                  <li><a href="../forsys-solutions/revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                  <li><a href="../forsys-solutions/lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                  <li><a href="../forsys-solutions/revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                  <li><a href="../forsys-solutions/mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                  <li><a href="../forsys-solutions/aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                  <li><a href="../forsys-solutions/ai-agents.html" role="menuitem">AI Agents</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+            <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+            <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+            <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+            <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <span class="dropdown-group-label">Strategic Partners</span>
+            <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+            <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+            <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-group-label">Technology Partners</span>
+            <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+            <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+            <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+            <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+            <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../resources/customer-stories.html" role="menuitem" aria-current="page">Customer Stories</a>
+            <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+            <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+            <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+            <a href="../resources/events.html" role="menuitem">Events</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../company/about.html" role="menuitem">About Forsys</a>
+            <a href="../company/leadership.html" role="menuitem">Leadership</a>
+            <a href="../company/culture.html" role="menuitem">Culture</a>
+            <a href="../company/careers.html" role="menuitem">Careers</a>
+            <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="../company/about.html" class="btn-nav-ghost">About</a>
+        <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="res-hero" aria-labelledby="hero-title">
+      <div class="res-hero-inner">
+        <div class="res-hero-eyebrow">Resources</div>
+        <h1 class="res-hero-title" id="hero-title">
+          Customer <span class="gradient-text">Success Stories</span>
+        </h1>
+        <p class="res-hero-desc">
+          Explore how leading enterprises across Hi-Tech, Manufacturing, Financial Services, and Healthcare transformed their Lead-to-Revenue operations with Forsys.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Filter Bar -->
+    <div class="res-filter" role="navigation" aria-label="Filter stories by industry">
+      <div class="res-filter-inner">
+        <span class="res-filter-label">Filter by:</span>
+        <a href="#" class="res-filter-btn is-active" aria-current="true">All</a>
+        <a href="#" class="res-filter-btn">Hi-Tech</a>
+        <a href="#" class="res-filter-btn">Manufacturing</a>
+        <a href="#" class="res-filter-btn">Financial Services</a>
+        <a href="#" class="res-filter-btn">Healthcare</a>
+        <a href="#" class="res-filter-btn">SaaS</a>
+      </div>
+    </div>
+
+    <!-- 3. Featured Story -->
+    <section class="res-featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="res-section-header">
+          <div class="res-section-label">Featured Story</div>
+          <h2 class="res-section-title" id="featured-title">
+            Transforming Revenue Operations at <span class="gradient-text">Enterprise Scale</span>
+          </h2>
+        </div>
+
+        <div class="res-featured-card">
+          <!-- Left: story copy -->
+          <div class="res-featured-left">
+            <div class="res-featured-eyebrow">Manufacturing / Hi-Tech</div>
+            <h3 class="res-featured-title">
+              Fortune 500 Manufacturer Achieves 100% Quote Accuracy with Conga CPQ
+            </h3>
+            <p class="res-featured-desc">
+              A Fortune 500 heavy equipment manufacturer faced pricing errors across thousands of configurable SKUs. Forsys implemented Conga CPQ with custom configuration rules, dealer portal integration, and ERP synchronization — delivering measurable improvements across the entire sales cycle.
+            </p>
+            <a href="#" class="res-featured-link" aria-label="Read the full story about Fortune 500 Manufacturer">
+              Read the Full Story
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: stats 2x2 -->
+          <div class="res-featured-stats" aria-label="Key results">
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">100%</div>
+              <div class="res-featured-stat-desc">Quote Accuracy Post-Go-Live</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">23%</div>
+              <div class="res-featured-stat-desc">Customer Lifetime Value Improvement</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">50%</div>
+              <div class="res-featured-stat-desc">Reduction in Quote Time</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">$1M+</div>
+              <div class="res-featured-stat-desc">Initial Annual Savings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. All Stories Grid -->
+    <section class="res-grid-section" aria-labelledby="grid-title">
+      <div class="container">
+        <div class="res-section-header">
+          <div class="res-section-label">All Customer Stories</div>
+          <h2 class="res-section-title" id="grid-title">
+            Proven Results Across <span class="gradient-text">Every Industry</span>
+          </h2>
+        </div>
+
+        <div class="res-grid" role="list">
+
+          <!-- Card 1 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Manufacturing</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Manufacturing</span>
+                <span class="res-card-tag res-card-tag--teal">Conga CPQ</span>
+              </div>
+              <h3 class="res-card-title">10X Faster Quote Generation for Transport Firm</h3>
+              <p class="res-card-desc">
+                A leading transport company replaced manual quoting processes with Conga CPQ automation — delivering 10X faster quotes and eliminating pricing errors across their fleet solutions catalog.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Manufacturing</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: 10X Faster Quote Generation for Transport Firm">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Financial Services</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Financial Services</span>
+                <span class="res-card-tag res-card-tag--teal">CLM</span>
+              </div>
+              <h3 class="res-card-title">$6B Insurance Company Achieves 45% Contract Accuracy Improvement</h3>
+              <p class="res-card-desc">
+                AI-powered Conga CLM implementation transformed contract management for a $6 billion insurance company — reducing cycle time by 50% and eliminating manual review errors.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Financial Services</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CLM</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: $6B Insurance Company Achieves 45% Contract Accuracy Improvement">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Healthcare</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Healthcare</span>
+                <span class="res-card-tag res-card-tag--green">Managed Services</span>
+              </div>
+              <h3 class="res-card-title">Healthcare Platform Provider Reduces IT Costs by 25%</h3>
+              <p class="res-card-desc">
+                Proactive AI-managed services model reduced IT overhead by 25% while improving application availability and compliance monitoring across critical healthcare systems.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Healthcare</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Managed Services</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Healthcare Platform Provider Reduces IT Costs by 25%">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Hi-Tech</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Hi-Tech</span>
+                <span class="res-card-tag res-card-tag--teal">Salesforce CPQ</span>
+              </div>
+              <h3 class="res-card-title">Tech Firm Sees 30% Decline in Pricing Errors with Salesforce CPQ</h3>
+              <p class="res-card-desc">
+                Salesforce CPQ implementation with custom pricing rules and approval workflows eliminated pricing errors and accelerated deal velocity for a leading hi-tech company.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Hi-Tech</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Salesforce CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Tech Firm Sees 30% Decline in Pricing Errors with Salesforce CPQ">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">SaaS</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">SaaS</span>
+                <span class="res-card-tag res-card-tag--teal">Conga CPQ</span>
+              </div>
+              <h3 class="res-card-title">Video Tech Company Reduces Deal Closure Time by 34%</h3>
+              <p class="res-card-desc">
+                Conga CPQ with subscription billing integration and automated approval workflows cut deal closure time by 34% and improved customer retention by 18%.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>SaaS</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Video Tech Company Reduces Deal Closure Time by 34%">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Healthcare</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Healthcare</span>
+                <span class="res-card-tag res-card-tag--teal">CLM</span>
+              </div>
+              <h3 class="res-card-title">Live Entertainment Leader Improves Contracting Time by 50%</h3>
+              <p class="res-card-desc">
+                Conga CLM implementation streamlined the contract creation-to-signature process — cutting contracting time in half and improving legal team efficiency.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Healthcare / Entertainment</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CLM</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Live Entertainment Leader Improves Contracting Time by 50%">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Manufacturing</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Manufacturing</span>
+                <span class="res-card-tag res-card-tag--teal">Oracle SCM</span>
+              </div>
+              <h3 class="res-card-title">Boyd Technologies Saves 50% Time on Order Validation</h3>
+              <p class="res-card-desc">
+                Oracle Order Management implementation with custom validation rules delivered 50% time savings on TPI validation and real-time order visibility for Boyd Technologies.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Manufacturing</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Oracle</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Boyd Technologies Saves 50% Time on Order Validation">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">SaaS</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">SaaS</span>
+                <span class="res-card-tag res-card-tag--teal">Oracle Finance</span>
+              </div>
+              <h3 class="res-card-title">Media Company Saves 50% Manhours in Budgeting &amp; Forecasting</h3>
+              <p class="res-card-desc">
+                Oracle EPM implementation automated budgeting, forecasting, and reporting — delivering 50% manhour savings and dramatically improving financial data accuracy.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Media / SaaS</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Oracle Finance</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Media Company Saves 50% Manhours in Budgeting and Forecasting">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Hi-Tech</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Hi-Tech</span>
+                <span class="res-card-tag res-card-tag--green">Pharma</span>
+              </div>
+              <h3 class="res-card-title">Pharma Manufacturer Sees 37% Jump in Win Rate</h3>
+              <p class="res-card-desc">
+                End-to-end sales automation with Conga CPQ and Salesforce integration delivered a 37% improvement in win rate and faster quote-to-close cycles for a leading pharma manufacturer.
+              </p>
+              <div class="res-card-meta" aria-label="Story metadata">
+                <span>Healthcare / Hi-Tech</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Pharma Manufacturer Sees 37% Jump in Win Rate">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /.res-grid -->
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to become our next <span class="gradient-text">Success Story?</span></h2>
+        <p class="cta-sub">Join 250+ global customers who trust Forsys for Lead-to-Revenue transformation.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Schedule a Consultation &rarr;</a>
+          <a href="../company/about.html" class="btn-cta-outline">About Forsys</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises — 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="../forsys-solutions/revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

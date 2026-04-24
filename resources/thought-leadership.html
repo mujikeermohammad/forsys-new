@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought Leadership | Forsys — Lead-to-Revenue Intelligence</title>
+  <meta name="description" content="Insights, research, and perspectives from Forsys Lead-to-Revenue specialists on AI, CPQ, CLM, Revenue Cloud, and enterprise transformation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/resources.css">
+  <style>
+    /* ── Section header shared ─────────────────────────────── */
+    .res-section-label {
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+
+    .res-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 0;
+    }
+
+    .res-section-header {
+      margin-bottom: 48px;
+    }
+
+    /* ── Featured section ──────────────────────────────────── */
+    .res-featured .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── Grid section ──────────────────────────────────────── */
+    .res-grid-section .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── Read More link inside card ────────────────────────── */
+    .res-card-read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: Inter, sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--purple);
+      text-decoration: none;
+      margin-top: 12px;
+      transition: gap 0.15s ease;
+    }
+
+    .res-card-read-more:hover { gap: 8px; }
+    .res-card-read-more:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; border-radius: 2px; }
+
+    /* ── Gradient stat number override ──────────────────────── */
+    .res-featured-stat-num.gradient-text {
+      display: block;
+    }
+
+    /* ── Newsletter section ─────────────────────────────────── */
+    .res-newsletter .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── btn-primary (newsletter) ───────────────────────────── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 14px 28px;
+      background: var(--gradient-ai);
+      color: #fff;
+      border-radius: var(--radius-pill);
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .res-featured .container,
+      .res-grid-section .container,
+      .res-newsletter .container { padding: 0 32px; }
+    }
+
+    @media (max-width: 720px) {
+      .res-featured .container,
+      .res-grid-section .container,
+      .res-newsletter .container { padding: 0 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn-primary,
+      .res-card-read-more { transition: none; }
+    }
+  </style>
+</head>
+<body class="page-resources">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+      </a>
+      <div class="nav-center" role="menubar">
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="mega-menu mega-menu--wide" role="menu">
+            <div class="mega-grid mega-grid--wwd">
+              <div class="mega-col">
+                <div class="mega-col-title">Business Advisory</div>
+                <ul>
+                  <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                  <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                  <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                  <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+                <ul>
+                  <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                  <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                  <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+                <ul>
+                  <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                  <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                  <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                  <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+                </ul>
+                <div class="mega-sub-divider"></div>
+                <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+                <ul>
+                  <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                  <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                  <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                  <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation — AIStudio</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Services</div>
+                <div class="mega-sub-header">Technology</div>
+                <ul>
+                  <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                  <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                  <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                  <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                  <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--managed">
+                <div class="mega-col-title">AI Managed Services</div>
+                <ul><li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li></ul>
+              </div>
+              <div class="mega-col mega-col--ai">
+                <div class="mega-col-title">Forsys AI Solutions</div>
+                <ul>
+                  <li><a href="../forsys-solutions/revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                  <li><a href="../forsys-solutions/lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                  <li><a href="../forsys-solutions/revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                  <li><a href="../forsys-solutions/mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                  <li><a href="../forsys-solutions/aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                  <li><a href="../forsys-solutions/ai-agents.html" role="menuitem">AI Agents</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+            <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+            <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+            <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+            <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <span class="dropdown-group-label">Strategic Partners</span>
+            <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+            <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+            <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-group-label">Technology Partners</span>
+            <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+            <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+            <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+            <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+            <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+            <a href="../resources/thought-leadership.html" role="menuitem" aria-current="page">Thought Leadership</a>
+            <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+            <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+            <a href="../resources/events.html" role="menuitem">Events</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../company/about.html" role="menuitem">About Forsys</a>
+            <a href="../company/leadership.html" role="menuitem">Leadership</a>
+            <a href="../company/culture.html" role="menuitem">Culture</a>
+            <a href="../company/careers.html" role="menuitem">Careers</a>
+            <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="../company/about.html" class="btn-nav-ghost">About</a>
+        <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="res-hero" aria-labelledby="hero-title">
+      <div class="res-hero-inner">
+        <div class="res-hero-eyebrow">Resources</div>
+        <h1 class="res-hero-title" id="hero-title">
+          Thought <span class="gradient-text">Leadership</span>
+        </h1>
+        <p class="res-hero-desc">
+          Insights, research, and perspectives from Forsys Lead-to-Revenue specialists on AI, CPQ, CLM, Revenue Cloud, and enterprise transformation.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Filter Bar -->
+    <div class="res-filter" role="navigation" aria-label="Filter articles by topic">
+      <div class="res-filter-inner">
+        <span class="res-filter-label">Filter by:</span>
+        <a href="#" class="res-filter-btn is-active" aria-current="true">All</a>
+        <a href="#" class="res-filter-btn">AI &amp; Automation</a>
+        <a href="#" class="res-filter-btn">CPQ</a>
+        <a href="#" class="res-filter-btn">CLM &amp; Contracts</a>
+        <a href="#" class="res-filter-btn">Revenue Cloud</a>
+        <a href="#" class="res-filter-btn">Oracle</a>
+        <a href="#" class="res-filter-btn">Managed Services</a>
+      </div>
+    </div>
+
+    <!-- 3. Featured Article -->
+    <section class="res-featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="res-section-header">
+          <div class="res-section-label">Featured Insight</div>
+          <h2 class="res-section-title" id="featured-title">
+            The Future of <span class="gradient-text">AI-Driven Revenue Operations</span>
+          </h2>
+        </div>
+
+        <div class="res-featured-card">
+          <!-- Left: article copy -->
+          <div class="res-featured-left">
+            <div class="res-featured-eyebrow">AI &amp; Automation</div>
+            <h3 class="res-featured-title">
+              Why Every Enterprise Needs an AI-Native Lead-to-Revenue Stack in 2026
+            </h3>
+            <p class="res-featured-desc">
+              The convergence of Agentforce AI agents, autonomous CPQ, and intelligent contract management is reshaping how enterprises think about the revenue lifecycle. In this analysis, Forsys explores the five key shifts transforming Lead-to-Revenue operations and what enterprise leaders need to do now.
+            </p>
+            <a href="#" class="res-featured-link" aria-label="Read the article: Why Every Enterprise Needs an AI-Native Lead-to-Revenue Stack in 2026">
+              Read the Article
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="16" height="16"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: stats 2x2 -->
+          <div class="res-featured-stats" aria-label="Article highlights">
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">5</div>
+              <div class="res-featured-stat-desc">Key Trends Analyzed</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">500+</div>
+              <div class="res-featured-stat-desc">L2R Engagements Studied</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">2026</div>
+              <div class="res-featured-stat-desc">Forward-Looking Research</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num gradient-text">AI</div>
+              <div class="res-featured-stat-desc">Native Approach Required</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Articles Grid -->
+    <section class="res-grid-section" aria-labelledby="grid-title">
+      <div class="container">
+        <div class="res-section-header">
+          <div class="res-section-label">Latest Insights</div>
+          <h2 class="res-section-title" id="grid-title">
+            Expert Perspectives on <span class="gradient-text">Revenue Transformation</span>
+          </h2>
+        </div>
+
+        <div class="res-grid" role="list">
+
+          <!-- Article 1 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">AI &amp; Automation</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">AI &amp; Automation</span>
+              </div>
+              <h3 class="res-card-title">Agentforce vs. Traditional CRM Automation: What CFOs Need to Know</h3>
+              <p class="res-card-desc">
+                An executive-level comparison of autonomous AI agents vs. rule-based CRM automation — and why the difference matters for revenue predictability.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>5 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>AI</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Agentforce vs. Traditional CRM Automation">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">CPQ</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--teal">CPQ</span>
+              </div>
+              <h3 class="res-card-title">The Hidden Cost of Legacy CPQ Systems in 2026</h3>
+              <p class="res-card-desc">
+                Pricing errors, slow quote cycles, and disconnected approval workflows are costing enterprises millions. Forsys quantifies the true cost of inaction.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>7 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: The Hidden Cost of Legacy CPQ Systems in 2026">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">CLM &amp; Contracts</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--teal">CLM &amp; Contracts</span>
+              </div>
+              <h3 class="res-card-title">AI-Powered Contract Extraction: Moving 50+ Data Elements in 48 Hours</h3>
+              <p class="res-card-desc">
+                How LexiShift's AI extraction engine transforms legacy contract migration from a 6-month manual effort into a 48-hour automated process.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>6 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CLM</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: AI-Powered Contract Extraction">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Revenue Cloud</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">Revenue Cloud</span>
+              </div>
+              <h3 class="res-card-title">Migrating from Zuora to Salesforce Revenue Cloud: A Practitioner's Guide</h3>
+              <p class="res-card-desc">
+                Forsys shares the implementation playbook, common migration pitfalls, and success patterns from multiple Revenue Cloud migration engagements.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>8 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Revenue Cloud</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Migrating from Zuora to Salesforce Revenue Cloud">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Oracle</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--teal">Oracle</span>
+              </div>
+              <h3 class="res-card-title">Oracle EBS to Fusion Cloud: What 20 Years of Migrations Taught Us</h3>
+              <p class="res-card-desc">
+                Lessons from 35+ Oracle ERP and SCM cloud migrations — covering data strategies, integration architecture, and change management.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>10 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Oracle</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Oracle EBS to Fusion Cloud">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 6 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">AI &amp; Automation</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag">AI &amp; Automation</span>
+              </div>
+              <h3 class="res-card-title">Building an AI-Ready Revenue Stack: The Forsys Framework</h3>
+              <p class="res-card-desc">
+                A practical framework for assessing AI readiness across CPQ, CLM, billing, and CRM systems — and a roadmap for incremental transformation.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>6 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>AI</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Building an AI-Ready Revenue Stack">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 7 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">Managed Services</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--green">Managed Services</span>
+              </div>
+              <h3 class="res-card-title">The Progressive Value Realization Framework for AI Managed Services</h3>
+              <p class="res-card-desc">
+                How Forsys's progressive delivery model reduces total cost of ownership while continuously improving system performance and reliability.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>5 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>Managed Services</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: The Progressive Value Realization Framework">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 8 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">CPQ</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--teal">CPQ</span>
+              </div>
+              <h3 class="res-card-title">CPQ Selection Guide: Salesforce CPQ vs. Conga CPQ in 2026</h3>
+              <p class="res-card-desc">
+                An objective comparison of the two leading CPQ platforms for enterprise buyers — covering features, integrations, total cost, and migration paths.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>9 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CPQ</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: CPQ Selection Guide 2026">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article 9 -->
+          <div class="res-card" role="listitem">
+            <div class="res-card-thumb" aria-hidden="true">
+              <div class="res-card-thumb-gradient"></div>
+              <span class="res-card-thumb-label">CLM &amp; Contracts</span>
+            </div>
+            <div class="res-card-body">
+              <div class="res-card-tags" aria-label="Tags">
+                <span class="res-card-tag res-card-tag--teal">CLM &amp; Contracts</span>
+              </div>
+              <h3 class="res-card-title">Contract Intelligence: From Extraction to Action with Conga + LexiShift</h3>
+              <p class="res-card-desc">
+                How combining Conga CLM's workflow engine with LexiShift's AI extraction creates a complete contract intelligence platform for enterprise legal teams.
+              </p>
+              <div class="res-card-meta" aria-label="Article metadata">
+                <span>7 min read</span>
+                <span class="res-card-meta-sep" aria-hidden="true"></span>
+                <span>CLM</span>
+              </div>
+              <a href="#" class="res-card-read-more" aria-label="Read more: Contract Intelligence with Conga + LexiShift">
+                Read More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /.res-grid -->
+      </div>
+    </section>
+
+    <!-- 5. Newsletter -->
+    <section class="res-newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="res-newsletter-card">
+          <div class="res-hero-eyebrow" style="display: inline-flex; margin-bottom: 16px;">Lead-to-Revenue Intelligence</div>
+          <h2 class="res-newsletter-title" id="newsletter-title">Stay Ahead of Revenue Transformation</h2>
+          <p class="res-newsletter-desc">Subscribe to the Forsys Lead-to-Revenue briefing — monthly insights on AI, CPQ, CLM, and enterprise transformation delivered to your inbox.</p>
+          <a href="../company/about.html#contact" class="btn-primary">Subscribe to Insights</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to put these <span class="gradient-text">Insights</span> into action?</h2>
+        <p class="cta-sub">Talk to a Forsys expert and translate strategy into a tailored transformation roadmap for your business.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Schedule a Consultation &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises — 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="../forsys-solutions/revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

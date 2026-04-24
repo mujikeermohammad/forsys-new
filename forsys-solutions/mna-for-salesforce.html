@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MnA for Salesforce — Salesforce Org Migration for M&amp;A | Forsys AI Solutions</title>
+  <meta name="description" content="MnA for Salesforce is Forsys's accelerator for post-merger and acquisition Salesforce org consolidations — reducing 12-18 month org merges to 4-6 months through automated metadata analysis, intelligent deduplication, and parallel-operation support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/forsys-solutions.css">
+</head>
+<body class="page-fs">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+    </a>
+    <div class="nav-center" role="menubar">
+
+      <!-- What We Do mega-menu -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="mega-menu mega-menu--wide" role="menu">
+          <div class="mega-grid mega-grid--wwd">
+
+            <div class="mega-col">
+              <div class="mega-col-title">Business Advisory</div>
+              <ul>
+                <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+              <ul>
+                <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+              <ul>
+                <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+              </ul>
+              <div class="mega-sub-divider"></div>
+              <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+              <ul>
+                <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation &mdash; AIStudio</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-title">Services</div>
+              <div class="mega-sub-header">Technology</div>
+              <ul>
+                <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--managed">
+              <div class="mega-col-title">AI Managed Services</div>
+              <ul>
+                <li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--ai">
+              <div class="mega-col-title">Forsys AI Solutions</div>
+              <ul>
+                <li><a href="revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                <li><a href="lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                <li><a href="revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                <li><a href="mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                <li><a href="aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                <li><a href="ai-agents.html" role="menuitem">AI Agents</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries dropdown -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+          <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+          <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+          <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+          <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+        </div>
+      </div>
+
+      <!-- Partnerships dropdown -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <span class="dropdown-group-label">Strategic Partners</span>
+          <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+          <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+          <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+          <div class="dropdown-divider"></div>
+          <span class="dropdown-group-label">Technology Partners</span>
+          <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+          <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+          <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+          <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+          <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+        </div>
+      </div>
+
+      <!-- Resources dropdown -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+          <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+          <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+          <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+          <a href="../resources/events.html" role="menuitem">Events</a>
+        </div>
+      </div>
+
+      <!-- Company dropdown -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../company/about.html" role="menuitem">About Forsys</a>
+          <a href="../company/leadership.html" role="menuitem">Leadership</a>
+          <a href="../company/culture.html" role="menuitem">Culture</a>
+          <a href="../company/careers.html" role="menuitem">Careers</a>
+          <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="nav-right">
+      <a href="../company/about.html" class="btn-nav-ghost">About</a>
+      <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ==============================
+         1. HERO
+    ============================== -->
+    <section class="fs-hero" aria-labelledby="hero-title">
+      <div class="fs-hero-inner">
+        <div class="fs-hero-tag">Forsys AI Solutions</div>
+        <h1 class="fs-hero-title" id="hero-title">
+          MnA for<br>
+          <span class="gradient-text">Salesforce</span>
+        </h1>
+        <p class="fs-hero-desc">MnA for Salesforce is Forsys's accelerator for post-merger and acquisition Salesforce org consolidations &mdash; reducing 12-18 month org merges to 4-6 months through automated metadata analysis, intelligent deduplication, and parallel-operation support.</p>
+        <div class="fs-hero-actions">
+          <a href="mailto:info@forsysinc.com" class="btn-hero-primary">Accelerate Your Org Merge &rarr;</a>
+          <a href="#problem" class="btn-hero-secondary">See How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         2. PROBLEM STATEMENT
+    ============================== -->
+    <section class="fs-problem" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="fs-problem-grid">
+
+          <div class="fs-problem-copy">
+            <div class="section-label">The M&amp;A Salesforce Problem</div>
+            <h2 class="section-title" id="problem-title">Post-acquisition <span class="gradient-text">org merges</span> take too long</h2>
+            <p class="fs-problem-desc">Every month your teams operate on separate Salesforce orgs post-acquisition costs you in duplicate data, lost visibility, and integration overhead. Yet traditional org merges take 12-18 months and carry enormous data loss risk.</p>
+
+            <ul class="fs-pain-list" role="list">
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Duplicate accounts, contacts, and opportunities across orgs create conflicting records</span>
+              </li>
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Users and permission sets must be manually re-created &mdash; consuming weeks of admin time</span>
+              </li>
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">CPQ configurations, flows, and customizations can't simply be copied between orgs</span>
+              </li>
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="12"/>
+                    <line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Revenue reporting is impossible until orgs are consolidated &mdash; costing leadership visibility</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fs-problem-visual">
+            <div class="fs-problem-visual-title">Without MnA vs With MnA for Salesforce</div>
+            <div class="fs-before-after">
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--before">Without</div>
+                <ul class="fs-ba-items fs-ba-items--before" role="list">
+                  <li>12-18 month timeline</li>
+                  <li>Manual deduplication</li>
+                  <li>Duplicate record risk</li>
+                  <li>Permission re-creation</li>
+                  <li>No parallel visibility</li>
+                </ul>
+              </div>
+              <div class="fs-ba-arrow" aria-hidden="true">&rarr;</div>
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--after">With MnA</div>
+                <ul class="fs-ba-items fs-ba-items--after" role="list">
+                  <li>4-6 month timeline</li>
+                  <li>AI deduplication engine</li>
+                  <li>Record matching rules</li>
+                  <li>Automated user migration</li>
+                  <li>Dual-org dashboard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         3. HOW IT WORKS
+    ============================== -->
+    <section class="fs-how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">How MnA for Salesforce Works</div>
+          <h2 class="section-title" id="how-title">Analyse, deduplicate, and consolidate <span class="gradient-text">two orgs</span> into one</h2>
+          <p class="section-sub">MnA for Salesforce runs a structured four-phase program &mdash; assessment, deduplication, migration, and validation &mdash; at accelerated pace.</p>
+        </div>
+
+        <div class="fs-steps">
+
+          <article class="fs-step">
+            <div class="fs-step-num" aria-hidden="true">01</div>
+            <h3 class="fs-step-title">Analyse Both Orgs</h3>
+            <p class="fs-step-desc">MnA scans both source and target Salesforce orgs, building a complete metadata inventory &mdash; objects, fields, flows, profiles, integrations, and data volumes &mdash; and generating a consolidation complexity score.</p>
+          </article>
+
+          <article class="fs-step">
+            <div class="fs-step-num" aria-hidden="true">02</div>
+            <h3 class="fs-step-title">Deduplicate &amp; Map</h3>
+            <p class="fs-step-desc">AI-powered matching identifies duplicate accounts, contacts, and records across orgs &mdash; resolving conflicts based on configurable business rules and producing a verified, clean dataset ready for migration.</p>
+          </article>
+
+          <article class="fs-step">
+            <div class="fs-step-num" aria-hidden="true">03</div>
+            <h3 class="fs-step-title">Migrate &amp; Validate</h3>
+            <p class="fs-step-desc">Using FloData, MnA executes the org consolidation in controlled waves &mdash; metadata first, then reference data, then transactional records &mdash; with full reconciliation and rollback at every stage.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         4. KEY FEATURES
+    ============================== -->
+    <section class="fs-features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Key Features</div>
+          <h2 class="section-title" id="features-title">Built for Salesforce <span class="gradient-text">org consolidation</span> complexity</h2>
+        </div>
+
+        <div class="fs-feature-grid">
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8m-4-4v4"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Dual-Org Visibility Dashboard</h3>
+            <p class="fs-feature-desc">A unified dashboard giving administrators complete visibility into both source orgs simultaneously &mdash; data volumes, overlap analysis, user activity, and migration progress &mdash; before cutover.</p>
+          </article>
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="M21 21l-4.35-4.35"/>
+                <path d="M8 11h6m-3-3v6"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">AI-Powered Deduplication</h3>
+            <p class="fs-feature-desc">Machine learning identifies duplicate accounts, contacts, leads, and opportunities across orgs using fuzzy matching, email matching, and domain analysis &mdash; with human review for ambiguous cases.</p>
+          </article>
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="9" y1="15" x2="15" y2="15"/>
+                <line x1="9" y1="11" x2="11" y2="11"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Metadata Consolidation Engine</h3>
+            <p class="fs-feature-desc">Automated metadata analysis and consolidation for Salesforce objects, fields, record types, page layouts, flows, and profiles &mdash; flagging conflicts and recommending merge strategies.</p>
+          </article>
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">User &amp; Permission Migration</h3>
+            <p class="fs-feature-desc">Automated user account migration with permission set reconciliation &mdash; mapping roles, profiles, and permission sets from both orgs to a unified target structure without manual recreation.</p>
+          </article>
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">CPQ Configuration Merge</h3>
+            <p class="fs-feature-desc">Specialised handling for Salesforce CPQ and Conga CPQ configurations &mdash; price books, product rules, quote templates, and approval workflows &mdash; ensuring CPQ functionality is preserved through the org merge.</p>
+          </article>
+
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Post-Merge Validation</h3>
+            <p class="fs-feature-desc">Comprehensive post-merge validation suite checking record counts, relationship integrity, permission coverage, and CPQ functionality &mdash; with automated regression testing powered by AITest.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         5. USE CASES
+    ============================== -->
+    <section class="fs-usecases" aria-labelledby="usecases-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Use Cases</div>
+          <h2 class="section-title" id="usecases-title">MnA org consolidations across every <span class="gradient-text">M&amp;A scenario</span></h2>
+        </div>
+
+        <div class="fs-usecase-grid">
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Hi-Tech</div>
+            <h3 class="fs-usecase-title">Post-Acquisition Org Merge (6 months)</h3>
+            <p class="fs-usecase-desc">A Hi-Tech company acquired a competitor with an existing Salesforce org. MnA for Salesforce completed the org consolidation in 6 months &mdash; merging 1.2M records, resolving 340K duplicates, and migrating 180 users with full permission set mapping.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Financial Services</div>
+            <h3 class="fs-usecase-title">Divestiture Org Carve-Out</h3>
+            <p class="fs-usecase-desc">A financial services firm divesting a business unit used MnA to carve out a subset of Salesforce data &mdash; accounts, contacts, opportunities, and cases &mdash; into a standalone org for the acquirer, with clean data extraction and full audit trail.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">SaaS</div>
+            <h3 class="fs-usecase-title">Multi-Org Consolidation (3 orgs to 1)</h3>
+            <p class="fs-usecase-desc">A SaaS company operating three Salesforce orgs from three regional acquisitions used MnA to consolidate into a single global org &mdash; aligning sales processes, CPQ configurations, and reporting structures across all three regions.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         6. ROI / OUTCOMES
+    ============================== -->
+    <section class="fs-outcomes" aria-labelledby="outcomes-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Proven Outcomes</div>
+          <h2 class="section-title" id="outcomes-title">MnA delivers measurable <span class="gradient-text">consolidation results</span></h2>
+          <p class="section-sub">Real results from Forsys MnA for Salesforce post-acquisition programs.</p>
+        </div>
+
+        <div class="fs-outcomes-grid" role="list">
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat">4-6 mo</div>
+            <p class="fs-outcome-desc">Org consolidation timeline (vs 12-18 industry average)</p>
+            <div class="fs-outcome-source">MnA Post-Acquisition Programs</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat">23M</div>
+            <p class="fs-outcome-desc">Data records consolidated with zero data loss</p>
+            <div class="fs-outcome-source">Revenue Lifecycle Company</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat">340K</div>
+            <p class="fs-outcome-desc">Duplicate records identified and resolved by AI</p>
+            <div class="fs-outcome-source">Hi-Tech Org Merge</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat">50%</div>
+            <p class="fs-outcome-desc">Reduction in consolidation timeline vs manual approach</p>
+            <div class="fs-outcome-source">SaaS Multi-Org</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         7. CTA STRIP
+    ============================== -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to accelerate your Salesforce org merge with <span class="gradient-text">MnA?</span></h2>
+        <p class="cta-sub">Start with a free Org Complexity Assessment. We'll analyse both orgs, score consolidation complexity, and deliver a programme timeline in 1 week.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Book an Org Assessment &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises &mdash; 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

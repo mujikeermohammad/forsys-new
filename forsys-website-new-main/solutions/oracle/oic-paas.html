@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oracle OIC / PaaS | Forsys — Oracle Integration Specialists</title>
+  <meta name="description" content="Forsys has delivered 160+ Oracle integrations using Oracle Integration Cloud (OIC) and PaaS — connecting Oracle Fusion, Salesforce, SAP, NetSuite, and custom applications with API-led architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/solutions.css">
+</head>
+<body class="page-solutions">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="../../index.html" class="nav-logo">
+        <img src="../../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+      </a>
+      <div class="nav-center" role="menubar">
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="mega-menu mega-menu--wide" role="menu">
+            <div class="mega-grid mega-grid--wwd">
+              <div class="mega-col">
+                <div class="mega-col-title">Business Advisory</div>
+                <ul>
+                  <li><a href="../../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                  <li><a href="../../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                  <li><a href="../../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                  <li><a href="../../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+                <ul>
+                  <li><a href="../salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                  <li><a href="../salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                  <li><a href="../salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                  <li><a href="../salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                  <li><a href="../salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+                <ul>
+                  <li><a href="../conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                  <li><a href="../conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                  <li><a href="../conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                  <li><a href="../conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+                </ul>
+                <div class="mega-sub-divider"></div>
+                <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+                <ul>
+                  <li><a href="fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                  <li><a href="fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                  <li><a href="oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                  <li><a href="bpa-aistudio.html" role="menuitem">Business Process Automation — AIStudio</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Services</div>
+                <div class="mega-sub-header">Technology</div>
+                <ul>
+                  <li><a href="../../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                  <li><a href="../../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                  <li><a href="../../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                  <li><a href="../../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                  <li><a href="../../services/devops.html" role="menuitem">DevOps</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--managed">
+                <div class="mega-col-title">AI Managed Services</div>
+                <ul><li><a href="../../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li></ul>
+              </div>
+              <div class="mega-col mega-col--ai">
+                <div class="mega-col-title">Forsys AI Solutions</div>
+                <ul>
+                  <li><a href="../../forsys-solutions/revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                  <li><a href="../../forsys-solutions/lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                  <li><a href="../../forsys-solutions/revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                  <li><a href="../../forsys-solutions/mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                  <li><a href="../../forsys-solutions/aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                  <li><a href="../../forsys-solutions/ai-agents.html" role="menuitem">AI Agents</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+            <a href="../../industries/financial-services.html" role="menuitem">Financial Services</a>
+            <a href="../../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+            <a href="../../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+            <a href="../../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <span class="dropdown-group-label">Strategic Partners</span>
+            <a href="../../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+            <a href="../../partnerships/conga.html" role="menuitem">Conga</a>
+            <a href="../../partnerships/oracle.html" role="menuitem">Oracle</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-group-label">Technology Partners</span>
+            <a href="../../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+            <a href="../../partnerships/provus.html" role="menuitem">Provus</a>
+            <a href="../../partnerships/m3ter.html" role="menuitem">M3ter</a>
+            <a href="../../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+            <a href="../../partnerships/flosum.html" role="menuitem">Flosum</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+            <a href="../../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+            <a href="../../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+            <a href="../../resources/blogs.html" role="menuitem">Blogs</a>
+            <a href="../../resources/events.html" role="menuitem">Events</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../../company/about.html" role="menuitem">About Forsys</a>
+            <a href="../../company/leadership.html" role="menuitem">Leadership</a>
+            <a href="../../company/culture.html" role="menuitem">Culture</a>
+            <a href="../../company/careers.html" role="menuitem">Careers</a>
+            <a href="../../company/news-press.html" role="menuitem">News &amp; Press</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="../../company/about.html" class="btn-nav-ghost">About</a>
+        <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="sol-hero" aria-labelledby="hero-title">
+      <div class="sol-hero-inner">
+        <div class="sol-hero-tag">Oracle Solutions</div>
+        <h1 class="sol-hero-title" id="hero-title">
+          OIC &amp;<br>
+          <span class="gradient-text">PaaS</span>
+        </h1>
+        <p class="sol-hero-desc">
+          Forsys has delivered 160+ Oracle integrations using Oracle Integration Cloud (OIC) and PaaS &mdash; connecting Oracle Fusion, Salesforce, SAP, NetSuite, and custom applications with API-led architecture. We are Oracle&rsquo;s integration implementation specialists with 100+ certified consultants across OIC Gen 3, ICS, and Oracle PaaS.
+        </p>
+        <div class="sol-hero-actions">
+          <a href="mailto:info@forsysinc.com" class="btn-hero-primary">Accelerate Your Integration Program &rarr;</a>
+          <a href="#overview" class="btn-hero-secondary">View Our Expertise</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Overview -->
+    <section class="sol-overview" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="sol-overview-grid">
+          <div class="sol-overview-copy">
+            <div class="section-label">Oracle Integration Specialists</div>
+            <h2 class="section-title" id="overview-title">160+ integrations. API-led. <span class="gradient-text">Enterprise scale.</span></h2>
+            <p class="sol-overview-desc">
+              Forsys&rsquo;s Oracle OIC and PaaS practice is built on 160+ delivered integrations in Finance and SCM &mdash; the broadest Oracle integration portfolio of any L2R specialist. We implement Oracle Integration Cloud (OIC Gen 3, Gen 2, ICS), Oracle PaaS custom applications, and Oracle Cloud Infrastructure &mdash; giving enterprises a fully connected, API-governed technology architecture.
+            </p>
+            <div class="sol-badges">
+              <span class="sol-badge sol-badge--primary">Oracle Gold Partner</span>
+              <span class="sol-badge sol-badge--teal">160+ Integrations</span>
+              <span class="sol-badge sol-badge--green">OIC Gen 3 Specialists</span>
+            </div>
+          </div>
+          <div class="sol-overview-stats">
+            <div class="sol-overview-stat">
+              <span class="sol-overview-stat-num">160+</span>
+              <span class="sol-overview-stat-label">Oracle integrations in Finance &amp; SCM</span>
+            </div>
+            <div class="sol-overview-stat">
+              <span class="sol-overview-stat-num">35+</span>
+              <span class="sol-overview-stat-label">Oracle ERP engagements</span>
+            </div>
+            <div class="sol-overview-stat">
+              <span class="sol-overview-stat-num">100+</span>
+              <span class="sol-overview-stat-label">Oracle certified consultants</span>
+            </div>
+            <div class="sol-overview-stat">
+              <span class="sol-overview-stat-num">70%</span>
+              <span class="sol-overview-stat-label">Larger payload support achieved via OIC Gen 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Solution Scope -->
+    <section class="sol-scope" aria-labelledby="scope-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Solution Scope</div>
+          <h2 class="section-title" id="scope-title">Everything we deliver on <span class="gradient-text">Oracle OIC &amp; PaaS</span></h2>
+          <p class="section-sub">Full-spectrum Oracle integration and platform engineering &mdash; from OIC implementation and PaaS development to OCI infrastructure management.</p>
+        </div>
+        <div class="sol-scope-grid sol-scope-grid--3">
+
+          <article class="sol-scope-card">
+            <div class="sol-scope-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="sol-scope-title">Oracle Integration Cloud</h3>
+            <p class="sol-scope-desc">Full OIC implementation covering pre-built adapters, API-led connectivity, B2B integration, and process automation &mdash; connecting Oracle Fusion to every system in your enterprise landscape.</p>
+            <ul class="sol-scope-list">
+              <li>OIC Gen 3 / Gen 2 / ICS implementation</li>
+              <li>300+ pre-built Oracle adapters</li>
+              <li>B2B &amp; EDI integration</li>
+              <li>Process monitoring &amp; error handling</li>
+            </ul>
+          </article>
+
+          <article class="sol-scope-card">
+            <div class="sol-scope-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3 class="sol-scope-title">Oracle PaaS Development</h3>
+            <p class="sol-scope-desc">Custom Oracle PaaS application development &mdash; Oracle APEX, Oracle JET, and cloud-native microservices &mdash; extending Oracle Fusion with custom workflows, portals, and integration logic.</p>
+            <ul class="sol-scope-list">
+              <li>Oracle APEX &amp; JET development</li>
+              <li>Custom API development</li>
+              <li>Oracle Cloud Functions</li>
+              <li>Event-driven architecture</li>
+            </ul>
+          </article>
+
+          <article class="sol-scope-card">
+            <div class="sol-scope-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+              </svg>
+            </div>
+            <h3 class="sol-scope-title">Oracle Cloud Infrastructure</h3>
+            <p class="sol-scope-desc">Oracle Cloud Infrastructure (OCI) architecture, migration, and management &mdash; optimizing workload placement, security posture, and cost efficiency for Oracle-native and hybrid cloud environments.</p>
+            <ul class="sol-scope-list">
+              <li>OCI architecture &amp; migration</li>
+              <li>Compute, storage &amp; networking</li>
+              <li>Security &amp; identity management</li>
+              <li>Cost optimization &amp; governance</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Key Features -->
+    <section class="sol-features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Key Features</div>
+          <h2 class="section-title" id="features-title">Capabilities that make Forsys the <span class="gradient-text">integration leader</span></h2>
+          <p class="section-sub">From API-led architecture to real-time data pipelines &mdash; built on 160+ delivered Oracle integrations.</p>
+        </div>
+        <div class="sol-feature-grid">
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">API-Led Integration Architecture</h3>
+              <p class="sol-feature-desc">Forsys designs integration architectures using Oracle OIC&rsquo;s API-led approach &mdash; system, process, and experience layers &mdash; ensuring scalability, reusability, and governance across your enterprise integration landscape.</p>
+            </div>
+          </article>
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">Oracle Adapter Library</h3>
+              <p class="sol-feature-desc">Leverage Forsys&rsquo;s 160+ pre-built Oracle integration templates for Fusion Financials, SCM, HCM, and CX &mdash; accelerating integration deployment from months to weeks with tested, proven patterns.</p>
+            </div>
+          </article>
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">Custom PaaS Applications</h3>
+              <p class="sol-feature-desc">Build Oracle-native extensions using Oracle APEX, Oracle JET, and OCI Functions &mdash; embedding custom logic, workflows, and portals directly into the Oracle platform without third-party dependencies.</p>
+            </div>
+          </article>
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">Real-Time Data Pipelines</h3>
+              <p class="sol-feature-desc">Event-driven integration pipelines using Oracle Streaming Service and OIC &mdash; enabling real-time data synchronization between Oracle Fusion, Salesforce, SAP, and downstream analytics platforms.</p>
+            </div>
+          </article>
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0110 0v4"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">Security &amp; API Governance</h3>
+              <p class="sol-feature-desc">API security, OAuth 2.0, SAML, and JWT token management via Oracle API Gateway &mdash; with rate limiting, monitoring, and governance policies that protect enterprise API endpoints.</p>
+            </div>
+          </article>
+
+          <article class="sol-feature-card">
+            <div class="sol-feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <div class="sol-feature-body">
+              <h3 class="sol-feature-title">Integration Monitoring &amp; Operations</h3>
+              <p class="sol-feature-desc">Proactive integration monitoring, error alerting, and automated retry logic via OIC dashboards &mdash; with Forsys managed services for ongoing integration operations and L3 support.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Integration & Tech -->
+    <section class="sol-tech" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Integration &amp; Technology</div>
+          <h2 class="section-title" id="tech-title">OIC / PaaS <span class="gradient-text">Coverage</span></h2>
+          <p class="section-sub">End-to-end Oracle integration capability &mdash; from OIC Gen 3 implementation to OCI infrastructure and custom PaaS application development.</p>
+        </div>
+        <div class="sol-tech-layout">
+          <div class="sol-tech-copy">
+            <p class="sol-tech-desc">
+              Forsys integrates Oracle Fusion with your full enterprise landscape &mdash; Salesforce, SAP, NetSuite, MuleSoft, and custom applications &mdash; using Oracle OIC&rsquo;s API-led architecture. Our OIC practice covers pre-built adapters, B2B/EDI flows, event-driven pipelines, and custom PaaS extensions built on Oracle APEX, JET, and OCI Functions.
+            </p>
+            <div class="sol-tech-chips">
+              <span class="sol-tech-chip">Oracle OIC Gen 3</span>
+              <span class="sol-tech-chip">Oracle APEX</span>
+              <span class="sol-tech-chip">Oracle JET</span>
+              <span class="sol-tech-chip">Oracle PaaS</span>
+              <span class="sol-tech-chip">OCI</span>
+              <span class="sol-tech-chip">MuleSoft</span>
+              <span class="sol-tech-chip">Salesforce</span>
+              <span class="sol-tech-chip">FloData</span>
+            </div>
+          </div>
+          <div class="sol-tech-panel">
+            <div class="sol-tech-panel-title">OIC / PaaS Coverage</div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">OIC Gen 3</span>
+              <span class="sol-tech-row-badge">Expert</span>
+            </div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">OIC Gen 2 / ICS</span>
+              <span class="sol-tech-row-badge">Expert</span>
+            </div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">Oracle APEX</span>
+              <span class="sol-tech-row-badge">Certified</span>
+            </div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">Oracle PaaS</span>
+              <span class="sol-tech-row-badge">Certified</span>
+            </div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">OCI Architecture</span>
+              <span class="sol-tech-row-badge">Implemented</span>
+            </div>
+            <div class="sol-tech-row">
+              <span class="sol-tech-row-label">Oracle API Gateway</span>
+              <span class="sol-tech-row-badge">Expert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Customer Results -->
+    <section class="sol-results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Customer Results</div>
+          <h2 class="section-title" id="results-title">Proven <span class="gradient-text">outcomes</span> across 160+ Oracle integrations</h2>
+          <p class="section-sub">Real results from Forsys Oracle OIC and PaaS engagements.</p>
+        </div>
+        <div class="sol-results-grid">
+
+          <div class="sol-result-item">
+            <span class="sol-result-stat">70%</span>
+            <span class="sol-result-desc">Larger payload support achieved</span>
+            <span class="sol-result-client">Financial Services Firm &mdash; OIC Gen 3 migration</span>
+          </div>
+
+          <div class="sol-result-item">
+            <span class="sol-result-stat">99%</span>
+            <span class="sol-result-desc">Data accuracy achieved</span>
+            <span class="sol-result-client">Oracle Planning Central Cloud &mdash; OIC integration</span>
+          </div>
+
+          <div class="sol-result-item">
+            <span class="sol-result-stat">160+</span>
+            <span class="sol-result-desc">Oracle integrations delivered</span>
+            <span class="sol-result-client">Finance &amp; SCM &mdash; Forsys Oracle Practice</span>
+          </div>
+
+          <div class="sol-result-item">
+            <span class="sol-result-stat">35+</span>
+            <span class="sol-result-desc">Oracle ERP &amp; SCM engagements</span>
+            <span class="sol-result-client">Hi-Tech, Manufacturing, Healthcare</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to connect your enterprise with <span class="gradient-text">Oracle OIC?</span></h2>
+        <p class="cta-sub">Start with an Integration Architecture Review. We&rsquo;ll assess your current integration landscape and deliver a roadmap for API-led connectivity in 2 weeks.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Book an Integration Review &rarr;</a>
+          <a href="../../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../../index.html" class="nav-logo">
+          <img src="../../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises &mdash; 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="../../forsys-solutions/revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../../resources/blogs.html">Blogs</a></li>
+          <li><a href="../../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../../company/about.html">About Forsys</a></li>
+          <li><a href="../../company/leadership.html">Leadership</a></li>
+          <li><a href="../../company/culture.html">Culture</a></li>
+          <li><a href="../../company/careers.html">Careers</a></li>
+          <li><a href="../../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/script.js"></script>
+</body>
+</html>

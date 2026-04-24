@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agents — Industry AI Micro-Agents for Revenue Operations | Forsys AI Solutions</title>
+  <meta name="description" content="Forsys Industry AI Micro-Agents are pre-built, configurable autonomous agents for revenue operations — covering lead routing, deal coaching, contract review, renewal management, and procurement automation. Deploy in days, not months.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/forsys-solutions.css">
+</head>
+<body class="page-fs">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+    </a>
+    <div class="nav-center" role="menubar">
+
+      <!-- What We Do -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          What We Do
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="mega-menu mega-menu--wide" role="menu">
+          <div class="mega-grid mega-grid--wwd">
+
+            <div class="mega-col">
+              <div class="mega-col-title">Business Advisory</div>
+              <ul>
+                <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+              <ul>
+                <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+              <ul>
+                <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+              </ul>
+              <div class="mega-sub-divider"></div>
+              <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+              <ul>
+                <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation &mdash; AIStudio</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-title">Services</div>
+              <div class="mega-sub-header">Technology</div>
+              <ul>
+                <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--managed">
+              <div class="mega-col-title">AI Managed Services</div>
+              <ul>
+                <li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--ai">
+              <div class="mega-col-title">Forsys AI Solutions</div>
+              <ul>
+                <li><a href="revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                <li><a href="lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                <li><a href="revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                <li><a href="mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                <li><a href="aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                <li><a href="ai-agents.html" role="menuitem">AI Agents</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Industries
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+          <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+          <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+          <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+          <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+        </div>
+      </div>
+
+      <!-- Partnerships -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Partnerships
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <span class="dropdown-group-label">Strategic Partners</span>
+          <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+          <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+          <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+          <div class="dropdown-divider"></div>
+          <span class="dropdown-group-label">Technology Partners</span>
+          <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+          <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+          <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+          <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+          <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+        </div>
+      </div>
+
+      <!-- Resources -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Resources
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+          <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+          <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+          <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+          <a href="../resources/events.html" role="menuitem">Events</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Company
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../company/about.html" role="menuitem">About Forsys</a>
+          <a href="../company/leadership.html" role="menuitem">Leadership</a>
+          <a href="../company/culture.html" role="menuitem">Culture</a>
+          <a href="../company/careers.html" role="menuitem">Careers</a>
+          <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="nav-right">
+      <a href="../company/about.html" class="btn-nav-ghost">About</a>
+      <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section class="fs-hero" aria-labelledby="hero-title">
+      <div class="fs-hero-inner">
+        <div class="fs-hero-tag">Forsys AI Solutions</div>
+        <h1 class="fs-hero-title" id="hero-title">
+          Industry AI<br>
+          <span class="gradient-text">Micro-Agents</span>
+        </h1>
+        <p class="fs-hero-desc">Forsys Industry AI Micro-Agents are pre-built, configurable autonomous agents for revenue operations &mdash; covering lead routing, deal coaching, contract review, renewal management, and procurement automation. Deploy in days, not months.</p>
+        <div class="fs-hero-actions">
+          <a href="mailto:info@forsysinc.com" class="btn-hero-primary">Deploy AI Agents &rarr;</a>
+          <a href="#problem" class="btn-hero-secondary">See How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — PROBLEM STATEMENT
+    ============================================================ -->
+    <section class="fs-problem" id="problem" aria-labelledby="problem-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="fs-problem-grid">
+
+          <!-- Left: copy + pain list -->
+          <div class="fs-problem-copy">
+            <div class="section-label">The AI Agent Build Problem</div>
+            <h2 class="section-title" id="problem-title">Building <span class="gradient-text">AI agents</span> from scratch is slow and expensive</h2>
+            <p class="fs-problem-desc">Every enterprise wants AI agents. But building them from scratch &mdash; architecture, data connections, testing, prompt engineering, monitoring &mdash; takes 3&ndash;6 months per agent. Forsys&rsquo;s pre-built micro-agents cut that to days.</p>
+
+            <ul class="fs-pain-list" role="list">
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Clock icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Custom AI agent development takes 3&ndash;6 months per use case &mdash; most never ship</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- X-circle icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Agents built without domain knowledge of CPQ, CLM, and ERP fail in production</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Shield icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Testing AI agents for revenue-critical processes requires specialised QA expertise</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Activity / monitor icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Agent monitoring and continuous improvement requires ongoing dedicated resources</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Right: before/after visual -->
+          <div class="fs-problem-visual" aria-label="Without Forsys Agents vs With Forsys Agents comparison">
+            <div class="fs-problem-visual-title">Without vs With Forsys AI Agents</div>
+            <div class="fs-before-after">
+
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--before">WITHOUT</div>
+                <ul class="fs-ba-items fs-ba-items--before" role="list">
+                  <li>3&ndash;6 months per agent</li>
+                  <li>From-scratch development</li>
+                  <li>Domain expertise gap</li>
+                  <li>Unproven in production</li>
+                  <li>No monitoring framework</li>
+                </ul>
+              </div>
+
+              <div class="fs-ba-arrow" aria-hidden="true">&rarr;</div>
+
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--after">WITH FORSYS AGENTS</div>
+                <ul class="fs-ba-items fs-ba-items--after" role="list">
+                  <li>Days to deploy</li>
+                  <li>Pre-built &amp; configured</li>
+                  <li>Revenue domain experts</li>
+                  <li>Production-proven patterns</li>
+                  <li>Built-in monitoring</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — HOW IT WORKS
+    ============================================================ -->
+    <section class="fs-how" aria-labelledby="how-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">How Forsys AI Micro-Agents Work</div>
+          <h2 class="section-title" id="how-title">Select, configure, and deploy &mdash; <span class="gradient-text">in days</span></h2>
+          <p class="section-sub" style="margin:0 auto;">Forsys AI Micro-Agents are production-proven templates that are configured for your data, connected to your platforms, and deployed in days.</p>
+        </div>
+
+        <div class="fs-steps" role="list">
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">01</div>
+            <div class="fs-step-title">Select Your Agents</div>
+            <p class="fs-step-desc">Browse Forsys&rsquo;s library of 20+ pre-built revenue operations AI agents &mdash; organised by function (Sales, Service, Revenue, Contracts, Procurement) and platform (Salesforce, Oracle, Conga).</p>
+          </div>
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">02</div>
+            <div class="fs-step-title">Configure &amp; Connect</div>
+            <p class="fs-step-desc">Our team configures each agent for your data model, business rules, and workflows &mdash; connecting to Salesforce, Oracle Fusion, Conga, and ERP systems with pre-built adapters.</p>
+          </div>
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">03</div>
+            <div class="fs-step-title">Deploy &amp; Monitor</div>
+            <p class="fs-step-desc">Agents go live with a monitoring dashboard tracking performance, conversation completion rates, escalation volumes, and business KPI impact &mdash; with a 90-day optimisation programme.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — FEATURES
+    ============================================================ -->
+    <section class="fs-features" aria-labelledby="features-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">Key Features</div>
+          <h2 class="section-title" id="features-title">Built for revenue operations at <span class="gradient-text">enterprise scale</span></h2>
+          <p class="section-sub" style="margin:0 auto;">Every Forsys AI Micro-Agent ships with domain intelligence, platform-native deployment, and a monitoring framework &mdash; so you get value from day one.</p>
+        </div>
+
+        <div class="fs-feature-grid">
+
+          <!-- Card 1: 20+ Pre-Built Agent Templates -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Grid / library icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">20+ Pre-Built Agent Templates</h3>
+            <p class="fs-feature-desc">Forsys&rsquo;s library covers Sales (lead routing, deal coaching), Service (case deflection, knowledge retrieval), Revenue (renewal management, amendment processing), Contracts (review, extraction), and Procurement (PO approval, supplier queries).</p>
+          </article>
+
+          <!-- Card 2: Revenue Domain Intelligence -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Brain / AI icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.663 17h4.673M12 3a4 4 0 014 4c0 .513-.098 1.003-.275 1.453A4 4 0 0118 12a4 4 0 01-1.039 2.693A3.5 3.5 0 0113.5 18H12m0 0H10.5a3.5 3.5 0 01-3.461-3.307A4 4 0 016 12a4 4 0 012.275-3.547A4 4 0 018 7a4 4 0 014-4z"/>
+                <line x1="12" y1="18" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Revenue Domain Intelligence</h3>
+            <p class="fs-feature-desc">Every agent is built with deep CPQ, CLM, and ERP domain knowledge &mdash; understanding Salesforce Revenue Cloud objects, Conga contract structures, and Oracle Fusion data models from day one.</p>
+          </article>
+
+          <!-- Card 3: Salesforce & Oracle Native -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Cloud / native icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Salesforce &amp; Oracle Native</h3>
+            <p class="fs-feature-desc">Agents deploy natively on Agentforce (Salesforce) or Oracle Digital Assistant &mdash; no third-party AI infrastructure required, no data leaving your cloud environment.</p>
+          </article>
+
+          <!-- Card 4: Configurable Action Libraries -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Sliders / config icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="21" x2="4" y2="14"/>
+                <line x1="4" y1="10" x2="4" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12" y2="3"/>
+                <line x1="20" y1="21" x2="20" y2="16"/>
+                <line x1="20" y1="12" x2="20" y2="3"/>
+                <line x1="1" y1="14" x2="7" y2="14"/>
+                <line x1="9" y1="8" x2="15" y2="8"/>
+                <line x1="17" y1="16" x2="23" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Configurable Action Libraries</h3>
+            <p class="fs-feature-desc">Each agent comes with a configurable set of actions &mdash; create records, send emails, trigger approvals, query ERP data &mdash; that can be extended or restricted to match your business requirements.</p>
+          </article>
+
+          <!-- Card 5: Agent Performance Monitoring -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Chart / monitoring icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+                <line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Agent Performance Monitoring</h3>
+            <p class="fs-feature-desc">Built-in monitoring dashboard tracking completion rates, handoff volumes, response accuracy, and business outcomes &mdash; with Forsys&rsquo;s 90-day post-launch optimisation service.</p>
+          </article>
+
+          <!-- Card 6: AITest Integration -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Check-circle / test icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">AITest Integration</h3>
+            <p class="fs-feature-desc">Every Forsys AI agent includes an AITest test suite &mdash; automated regression tests that run before every agent update, ensuring agents never regress in production.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — USE CASES
+    ============================================================ -->
+    <section class="fs-usecases" aria-labelledby="usecases-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">Use Cases</div>
+          <h2 class="section-title" id="usecases-title">Forsys AI Agents <span class="gradient-text">in the field</span></h2>
+          <p class="section-sub" style="margin:0 auto;">Forsys AI Micro-Agents have been deployed across Hi-Tech, Manufacturing, and Healthcare &mdash; delivering measurable automation in days.</p>
+        </div>
+
+        <div class="fs-usecase-grid">
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Hi-Tech</div>
+            <h3 class="fs-usecase-title">Sales AI Agent &mdash; Deal Coaching &amp; Lead Routing</h3>
+            <p class="fs-usecase-desc">Forsys deployed an Agentforce sales agent for a Hi-Tech company that routes inbound leads based on fit scoring, coaches reps on deal strategy, and surfaces renewal risk signals &mdash; reducing manual RevOps tasks by 80%.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Manufacturing</div>
+            <h3 class="fs-usecase-title">Procurement AI Agent &mdash; PO Approval &amp; Supplier Query</h3>
+            <p class="fs-usecase-desc">A manufacturing company deployed Forsys&rsquo;s Oracle-native procurement agent to handle routine PO approvals, supplier query responses, and invoice status updates &mdash; freeing procurement staff for strategic sourcing work.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Healthcare</div>
+            <h3 class="fs-usecase-title">Contract Review AI Agent</h3>
+            <p class="fs-usecase-desc">A healthcare enterprise deployed Forsys&rsquo;s CLM review agent to pre-screen incoming supplier contracts &mdash; flagging non-standard clauses, HIPAA compliance gaps, and financial risk indicators before legal review, reducing lawyer time per contract by 60%.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — OUTCOMES
+    ============================================================ -->
+    <section class="fs-outcomes" aria-labelledby="outcomes-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">AI Agent Outcomes</div>
+          <h2 class="section-title" id="outcomes-title">Proven results from production <span class="gradient-text">AI agents</span></h2>
+          <p class="section-sub" style="margin:0 auto;">Real outcomes from Forsys AI Micro-Agent deployments across Salesforce, Oracle, and Conga platforms.</p>
+        </div>
+
+        <div class="fs-outcomes-grid" role="list">
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="80 percent">80%</div>
+            <div class="fs-outcome-desc">Reduction in manual revenue operations tasks</div>
+            <div class="fs-outcome-source">Hi-Tech &mdash; Sales AI Agent</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="200 plus">200+</div>
+            <div class="fs-outcome-desc">AI agents deployed across Salesforce, Oracle, and Conga</div>
+            <div class="fs-outcome-source">Forsys AI Practice</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="3 weeks">3 wks</div>
+            <div class="fs-outcome-desc">Average time from kickoff to production agent deployment</div>
+            <div class="fs-outcome-source">Agent Library Program</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="4.8 out of 5">4.8/5</div>
+            <div class="fs-outcome-desc">CSAT rating across Agentforce implementations</div>
+            <div class="fs-outcome-source">Forsys Salesforce Summit Partner</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CTA STRIP
+    ============================================================ -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to deploy pre-built AI agents with <span class="gradient-text">Forsys?</span></h2>
+        <p class="cta-sub">Start with a free Agent Use Case Assessment. We&rsquo;ll identify your top 5 automation opportunities and match them to pre-built agents &mdash; delivered in 1 week.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Get Your Agent Assessment &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises &mdash; 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

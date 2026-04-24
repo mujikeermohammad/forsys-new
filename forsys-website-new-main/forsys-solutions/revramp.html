@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevRamp — Fast &amp; Seamless CPQ Data Migration | Forsys AI Solutions</title>
+  <meta name="description" content="RevRamp is Forsys's AI-powered CPQ data migration platform — purpose-built to move product catalogs, pricing rules, quote history, and configuration data between CPQ platforms with zero data loss, automated validation, and weeks instead of months.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/forsys-solutions.css">
+</head>
+<body class="page-fs">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+    </a>
+    <div class="nav-center" role="menubar">
+
+      <!-- What We Do -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          What We Do
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="mega-menu mega-menu--wide" role="menu">
+          <div class="mega-grid mega-grid--wwd">
+
+            <div class="mega-col">
+              <div class="mega-col-title">Business Advisory</div>
+              <ul>
+                <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+              <ul>
+                <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+              <ul>
+                <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+              </ul>
+              <div class="mega-sub-divider"></div>
+              <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+              <ul>
+                <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation &mdash; AIStudio</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-title">Services</div>
+              <div class="mega-sub-header">Technology</div>
+              <ul>
+                <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--managed">
+              <div class="mega-col-title">AI Managed Services</div>
+              <ul>
+                <li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li>
+              </ul>
+            </div>
+
+            <div class="mega-col mega-col--ai">
+              <div class="mega-col-title">Forsys AI Solutions</div>
+              <ul>
+                <li><a href="revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                <li><a href="lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                <li><a href="revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                <li><a href="mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                <li><a href="aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                <li><a href="ai-agents.html" role="menuitem">AI Agents</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Industries
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+          <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+          <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+          <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+          <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+        </div>
+      </div>
+
+      <!-- Partnerships -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Partnerships
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <span class="dropdown-group-label">Strategic Partners</span>
+          <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+          <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+          <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+          <div class="dropdown-divider"></div>
+          <span class="dropdown-group-label">Technology Partners</span>
+          <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+          <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+          <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+          <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+          <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+        </div>
+      </div>
+
+      <!-- Resources -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Resources
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+          <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+          <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+          <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+          <a href="../resources/events.html" role="menuitem">Events</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Company
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown" role="menu">
+          <a href="../company/about.html" role="menuitem">About Forsys</a>
+          <a href="../company/leadership.html" role="menuitem">Leadership</a>
+          <a href="../company/culture.html" role="menuitem">Culture</a>
+          <a href="../company/careers.html" role="menuitem">Careers</a>
+          <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="nav-right">
+      <a href="../company/about.html" class="btn-nav-ghost">About</a>
+      <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section class="fs-hero" aria-labelledby="hero-title">
+      <div class="fs-hero-inner">
+        <div class="fs-hero-tag">Forsys AI Solutions</div>
+        <h1 class="fs-hero-title" id="hero-title">
+          RevRamp<br>
+          <span class="gradient-text">CPQ Migration</span>
+        </h1>
+        <p class="fs-hero-desc">RevRamp is Forsys's AI-powered CPQ data migration platform &mdash; purpose-built to move product catalogs, pricing rules, quote history, and configuration data between CPQ platforms with zero data loss, automated validation, and weeks instead of months.</p>
+        <div class="fs-hero-actions">
+          <a href="mailto:info@forsysinc.com" class="btn-hero-primary">Start Your CPQ Migration &rarr;</a>
+          <a href="#problem" class="btn-hero-secondary">See How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — PROBLEM STATEMENT
+    ============================================================ -->
+    <section class="fs-problem" id="problem" aria-labelledby="problem-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="fs-problem-grid">
+
+          <!-- Left: copy + pain list -->
+          <div class="fs-problem-copy">
+            <div class="section-label">The CPQ Migration Problem</div>
+            <h2 class="section-title" id="problem-title">CPQ migrations shouldn&rsquo;t take <span class="gradient-text">12 months</span></h2>
+            <p class="fs-problem-desc">Legacy CPQ migrations are high-risk, expensive, and slow. Manual data mapping breaks business rules. Product catalog rationalization takes months. And every day of delay is revenue leakage.</p>
+
+            <ul class="fs-pain-list" role="list">
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Clock icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Manual mapping takes 6&ndash;12 months for complex catalogs</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- X-circle icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Business rule breakage causes quote errors post-migration</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Database icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M21 12c0 1.66-4.03 3-9 3S3 13.66 3 12"/>
+                    <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Product proliferation makes migrations exponentially harder</span>
+              </li>
+
+              <li class="fs-pain-item">
+                <div class="fs-pain-icon" aria-hidden="true">
+                  <!-- Alert-triangle icon -->
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                  </svg>
+                </div>
+                <span class="fs-pain-text">Delta migrations between cutover phases risk data drift</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Right: before/after visual -->
+          <div class="fs-problem-visual" aria-label="Without RevRamp vs With RevRamp comparison">
+            <div class="fs-problem-visual-title">Without RevRamp vs With RevRamp</div>
+            <div class="fs-before-after">
+
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--before">WITHOUT REVAMP</div>
+                <ul class="fs-ba-items fs-ba-items--before" role="list">
+                  <li>12-month timeline</li>
+                  <li>Manual field mapping</li>
+                  <li>Rule breakage risk</li>
+                  <li>No rollback capability</li>
+                  <li>Spreadsheet tracking</li>
+                </ul>
+              </div>
+
+              <div class="fs-ba-arrow" aria-hidden="true">&rarr;</div>
+
+              <div class="fs-ba-col">
+                <div class="fs-ba-label fs-ba-label--after">WITH REVRAMP</div>
+                <ul class="fs-ba-items fs-ba-items--after" role="list">
+                  <li>6&ndash;8 week timeline</li>
+                  <li>AI-automated mapping</li>
+                  <li>Rule validation engine</li>
+                  <li>Full rollback capability</li>
+                  <li>Real-time dashboard</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — HOW IT WORKS
+    ============================================================ -->
+    <section class="fs-how" aria-labelledby="how-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">How RevRamp Works</div>
+          <h2 class="section-title" id="how-title">Three steps from <span class="gradient-text">legacy CPQ</span> to production</h2>
+          <p class="section-sub" style="margin:0 auto;">RevRamp connects to your source and target CPQ platforms, automates data transformation, and validates every record before go-live.</p>
+        </div>
+
+        <div class="fs-steps" role="list">
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">01</div>
+            <div class="fs-step-title">Connect &amp; Discover</div>
+            <p class="fs-step-desc">RevRamp connects to your source CPQ &mdash; Oracle CPQ, PROS, homegrown &mdash; via pre-built adapters and profiles your entire data estate: products, bundles, pricing, rules, and quote history.</p>
+          </div>
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">02</div>
+            <div class="fs-step-title">Transform &amp; Map</div>
+            <p class="fs-step-desc">AI-powered field mapping matches source schema to target (Salesforce CPQ, Conga CPQ) with automated business rule translation and product catalog rationalization built in.</p>
+          </div>
+
+          <div class="fs-step" role="listitem">
+            <div class="fs-step-num" aria-hidden="true">03</div>
+            <div class="fs-step-title">Validate &amp; Go Live</div>
+            <p class="fs-step-desc">Every migrated record is validated against 200+ data quality rules. Reconciliation dashboards show counts, delta records, and business rule coverage before you approve cutover.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — FEATURES
+    ============================================================ -->
+    <section class="fs-features" aria-labelledby="features-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">Key Features</div>
+          <h2 class="section-title" id="features-title">Built for <span class="gradient-text">CPQ complexity</span> at enterprise scale</h2>
+          <p class="section-sub" style="margin:0 auto;">RevRamp handles the full range of CPQ data scenarios &mdash; from simple SKU migrations to 30,000-SKU enterprise catalog rationalizations.</p>
+        </div>
+
+        <div class="fs-feature-grid">
+
+          <!-- Card 1: Pre-Built CPQ Connectors -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Plug / connector icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Pre-Built CPQ Connectors</h3>
+            <p class="fs-feature-desc">Native adapters for Oracle CPQ, PROS, Salesforce CPQ, Conga CPQ, Apttus, and homegrown CPQ platforms &mdash; no custom integration code required.</p>
+          </article>
+
+          <!-- Card 2: AI Field Mapping -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Brain / AI icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.663 17h4.673M12 3a4 4 0 014 4c0 .513-.098 1.003-.275 1.453A4 4 0 0118 12a4 4 0 01-1.039 2.693A3.5 3.5 0 0113.5 18H12m0 0H10.5a3.5 3.5 0 01-3.461-3.307A4 4 0 016 12a4 4 0 012.275-3.547A4 4 0 018 7a4 4 0 014-4z"/>
+                <line x1="12" y1="18" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">AI Field Mapping</h3>
+            <p class="fs-feature-desc">Machine learning maps source fields to target schema automatically &mdash; learning from historical migrations to improve accuracy with every project.</p>
+          </article>
+
+          <!-- Card 3: Business Rule Preservation -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Shield-check icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Business Rule Preservation</h3>
+            <p class="fs-feature-desc">Pricing rules, product constraints, approval logic, and configuration rules are translated to target platform equivalents &mdash; not lost in migration.</p>
+          </article>
+
+          <!-- Card 4: Delta Migration -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Refresh / sync icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Delta Migration</h3>
+            <p class="fs-feature-desc">Incremental delta migration support &mdash; keeping source and target in sync during parallel run periods, eliminating cutover risk.</p>
+          </article>
+
+          <!-- Card 5: Rollback Capability -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Undo / rollback icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Rollback Capability</h3>
+            <p class="fs-feature-desc">Full rollback to source at any migration stage &mdash; every operation is reversible, every state is captured, giving you a safety net throughout the migration.</p>
+          </article>
+
+          <!-- Card 6: Real-Time Dashboard -->
+          <article class="fs-feature-card">
+            <div class="fs-feature-icon" aria-hidden="true">
+              <!-- Chart-bar icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+                <line x1="2" y1="20" x2="22" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="fs-feature-title">Real-Time Dashboard</h3>
+            <p class="fs-feature-desc">Live migration progress dashboard showing record counts, validation status, error queues, and reconciliation metrics &mdash; visible to all stakeholders.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — USE CASES
+    ============================================================ -->
+    <section class="fs-usecases" aria-labelledby="usecases-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">Use Cases</div>
+          <h2 class="section-title" id="usecases-title">RevRamp <span class="gradient-text">in the field</span></h2>
+          <p class="section-sub" style="margin:0 auto;">RevRamp has been deployed across CPQ platform migrations, org consolidations, and catalog rationalization programs.</p>
+        </div>
+
+        <div class="fs-usecase-grid">
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Hi-Tech</div>
+            <h3 class="fs-usecase-title">Oracle CPQ to Salesforce Revenue Cloud</h3>
+            <p class="fs-usecase-desc">A Hi-Tech enterprise migrated 23M+ CPQ records including product catalog, pricing rules, and 5-year quote history from Oracle CPQ to Salesforce Revenue Cloud &mdash; in 8 weeks with zero data loss.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">Manufacturing</div>
+            <h3 class="fs-usecase-title">30K SKU Catalog Rationalization</h3>
+            <p class="fs-usecase-desc">A Fortune 500 manufacturer used RevRamp to rationalise a 30,000-SKU product catalog during their Conga CPQ migration &mdash; eliminating duplicate products and enabling touchless processing.</p>
+          </article>
+
+          <article class="fs-usecase-card">
+            <div class="fs-usecase-industry">SaaS</div>
+            <h3 class="fs-usecase-title">Conga CPQ to Salesforce Migration</h3>
+            <p class="fs-usecase-desc">A SaaS company migrated their Conga CPQ configuration, pricing tiers, approval workflows, and subscription products to Salesforce CPQ &mdash; with full business rule validation and zero revenue impact.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — OUTCOMES
+    ============================================================ -->
+    <section class="fs-outcomes" aria-labelledby="outcomes-title">
+      <div class="container" style="max-width:var(--container-max);margin:0 auto;">
+        <div class="text-center section-header">
+          <div class="section-label">RevRamp Outcomes</div>
+          <h2 class="section-title" id="outcomes-title">Proven <span class="gradient-text">migration results</span></h2>
+          <p class="section-sub" style="margin:0 auto;">Real outcomes from RevRamp deployments across CPQ platform migrations.</p>
+        </div>
+
+        <div class="fs-outcomes-grid" role="list">
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="23 million plus">23M+</div>
+            <div class="fs-outcome-desc">Data records migrated with zero data loss</div>
+            <div class="fs-outcome-source">Revenue Lifecycle Company</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="60 percent">60%</div>
+            <div class="fs-outcome-desc">Reduction in migration timeline vs manual approach</div>
+            <div class="fs-outcome-source">Enterprise Hi-Tech</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="30 thousand">30K</div>
+            <div class="fs-outcome-desc">SKU rationalization achieved during migration</div>
+            <div class="fs-outcome-source">Fortune 500 Manufacturing</div>
+          </div>
+
+          <div class="fs-outcome-item" role="listitem">
+            <div class="fs-outcome-stat" aria-label="100 percent">100%</div>
+            <div class="fs-outcome-desc">Data validation accuracy post-migration</div>
+            <div class="fs-outcome-source">SaaS CPQ Migration</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CTA STRIP
+    ============================================================ -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to migrate your CPQ data with <span class="gradient-text">RevRamp?</span></h2>
+        <p class="cta-sub">Start with a free CPQ Data Assessment. We&rsquo;ll profile your source data, estimate migration complexity, and deliver a timeline in 1 week.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Book a Free Data Assessment &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises &mdash; 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

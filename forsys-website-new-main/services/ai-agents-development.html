@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI &amp; Agents Development | Forsys</title>
+  <meta name="description" content="Forsys builds autonomous AI agents on Salesforce Agentforce, Oracle Digital Assistant, and custom LLM frameworks — covering the full agent lifecycle from strategy through production operation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+</head>
+<body class="page-services">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav id="main-nav" aria-label="Main navigation">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+    </a>
+    <div class="nav-center" role="menubar">
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="mega-menu mega-menu--wide" role="menu">
+          <div class="mega-grid mega-grid--wwd">
+            <div class="mega-col">
+              <div class="mega-col-title">Business Advisory</div>
+              <ul>
+                <li><a href="revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                <li><a href="build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                <li><a href="enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                <li><a href="autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+              </ul>
+            </div>
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+              <ul>
+                <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+              </ul>
+            </div>
+            <div class="mega-col mega-col--platform">
+              <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+              <ul>
+                <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+              </ul>
+              <div class="mega-sub-divider"></div>
+              <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+              <ul>
+                <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation — AIStudio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-title">Services</div>
+              <div class="mega-sub-header">Technology</div>
+              <ul>
+                <li><a href="ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                <li><a href="ai-agents-development.html" role="menuitem" aria-current="page">AI &amp; Agents Development</a></li>
+                <li><a href="integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                <li><a href="data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                <li><a href="devops.html" role="menuitem">DevOps</a></li>
+              </ul>
+            </div>
+            <div class="mega-col mega-col--managed">
+              <div class="mega-col-title">AI Managed Services</div>
+              <ul><li><a href="ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li></ul>
+            </div>
+            <div class="mega-col mega-col--ai">
+              <div class="mega-col-title">Forsys AI Solutions</div>
+              <ul>
+                <li><a href="../forsys-solutions/revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                <li><a href="../forsys-solutions/lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                <li><a href="../forsys-solutions/revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                <li><a href="../forsys-solutions/mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                <li><a href="../forsys-solutions/aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                <li><a href="../forsys-solutions/ai-agents.html" role="menuitem">AI Agents</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+          <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+          <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+          <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+          <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+        </div>
+      </div>
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <span class="dropdown-group-label">Strategic Partners</span>
+          <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+          <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+          <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+          <div class="dropdown-divider"></div>
+          <span class="dropdown-group-label">Technology Partners</span>
+          <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+          <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+          <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+          <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+          <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+        </div>
+      </div>
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+          <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+          <a href="../resources/webinars-media.html" role="menuitem">Webinars &amp; Media</a>
+          <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+          <a href="../resources/events.html" role="menuitem">Events</a>
+        </div>
+      </div>
+      <div class="nav-item" role="none">
+        <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown" role="menu">
+          <a href="../company/about.html" role="menuitem">About Forsys</a>
+          <a href="../company/leadership.html" role="menuitem">Leadership</a>
+          <a href="../company/culture.html" role="menuitem">Culture</a>
+          <a href="../company/careers.html" role="menuitem">Careers</a>
+          <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="../company/about.html" class="btn-nav-ghost">About</a>
+      <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ==============================
+         1. HERO
+    ============================== -->
+    <section class="svc-hero" aria-labelledby="hero-title">
+      <div class="svc-hero-inner">
+        <div class="svc-hero-tag">Services &mdash; Technology</div>
+        <h1 class="svc-hero-title" id="hero-title">
+          AI &amp; Agents<br>
+          <span class="gradient-text">Development</span>
+        </h1>
+        <p class="svc-hero-desc">
+          Forsys is an early adopter and Agentforce implementation specialist &mdash; building autonomous AI agents that handle lead routing, case deflection, quote generation, contract review, and renewal management with no human intervention required.
+        </p>
+        <div class="svc-hero-actions">
+          <a href="mailto:info@forsysinc.com" class="btn-hero-primary">Build Your AI Agents &rarr;</a>
+          <a href="#overview" class="btn-hero-secondary">Explore Our Approach</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         2. OVERVIEW
+    ============================== -->
+    <section class="svc-overview" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">The Agentforce Build Framework</div>
+          <h2 class="section-title" id="overview-title">From agent strategy to <span class="gradient-text">autonomous production agents</span></h2>
+          <p class="section-sub">Forsys has deployed AI agents across 200+ Salesforce and Oracle engagements &mdash; we know how to build agents that actually work in production.</p>
+        </div>
+        <div class="svc-overview-grid">
+          <div class="svc-overview-copy">
+            <p>Forsys builds AI agents on Salesforce Agentforce, Oracle Digital Assistant, and custom LLM-based frameworks &mdash; covering the full agent lifecycle from strategy and architecture through development, testing, and production operation. We are early adopters of Agentforce Revenue Management and have deployed autonomous agents for lead management, service resolution, CPQ automation, and contract intelligence.</p>
+            <ul>
+              <li>Agentforce agent architecture and strategy</li>
+              <li>Custom agent development with low-code and API tools</li>
+              <li>Agent testing with AITest &mdash; Forsys's AI-powered QA platform</li>
+              <li>Production deployment, monitoring, and agent optimization</li>
+            </ul>
+          </div>
+          <div class="svc-overview-visual">
+            <div class="svc-overview-visual-title">The Agentforce Build Framework</div>
+            <div class="svc-framework-step">
+              <div class="svc-framework-num">01</div>
+              <div>
+                <div class="svc-framework-label">Assess</div>
+                <div class="svc-framework-sub">Map automation opportunities and define agent scope, data requirements, and success metrics</div>
+              </div>
+            </div>
+            <div class="svc-framework-step">
+              <div class="svc-framework-num">02</div>
+              <div>
+                <div class="svc-framework-label">Design</div>
+                <div class="svc-framework-sub">Architect agent topology, action libraries, data connections, and human-in-the-loop escalation patterns</div>
+              </div>
+            </div>
+            <div class="svc-framework-step">
+              <div class="svc-framework-num">03</div>
+              <div>
+                <div class="svc-framework-label">Configure</div>
+                <div class="svc-framework-sub">Build agents using Agentforce low-code tools and custom Apex/APIs for complex agent logic</div>
+              </div>
+            </div>
+            <div class="svc-framework-step">
+              <div class="svc-framework-num">04</div>
+              <div>
+                <div class="svc-framework-label">Optimize</div>
+                <div class="svc-framework-sub">Monitor agent performance, refine prompts, retrain models, and expand agent scope iteratively</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         3. KEY CAPABILITIES
+    ============================== -->
+    <section class="svc-capabilities" aria-labelledby="capabilities-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Key Capabilities</div>
+          <h2 class="section-title" id="capabilities-title">Everything you need to build <span class="gradient-text">AI agents</span> that work in production</h2>
+        </div>
+        <div class="svc-capability-grid">
+
+          <article class="svc-capability-card">
+            <div class="svc-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="svc-capability-title">Agent Architecture &amp; Strategy</h3>
+            <p class="svc-capability-desc">Define agent scope, capabilities, data access, action libraries, and escalation triggers &mdash; ensuring agents are built on a solid foundation that scales safely across departments and processes.</p>
+          </article>
+
+          <article class="svc-capability-card">
+            <div class="svc-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="svc-capability-title">Agentforce Build &amp; Deploy</h3>
+            <p class="svc-capability-desc">Native Agentforce agent development &mdash; configuring Einstein AI actions, Flows, custom Apex tools, and API integrations to build agents that execute across Sales, Service, Revenue, and Commerce clouds without human intervention.</p>
+          </article>
+
+          <article class="svc-capability-card">
+            <div class="svc-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              </svg>
+            </div>
+            <h3 class="svc-capability-title">Custom Agent Development</h3>
+            <p class="svc-capability-desc">Build agents beyond the Agentforce toolkit &mdash; custom LLM integrations, Oracle AI agents, or multi-agent architectures &mdash; using Forsys's AI engineering team and proprietary accelerators.</p>
+          </article>
+
+          <article class="svc-capability-card">
+            <div class="svc-capability-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="svc-capability-title">Agent Monitoring &amp; Optimization</h3>
+            <p class="svc-capability-desc">Post-launch agent performance monitoring &mdash; tracking conversation completion rates, escalation volumes, accuracy metrics, and business KPIs &mdash; with Forsys's continuous improvement service for deployed agents.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         4. PROCESS RAIL
+    ============================== -->
+    <section class="svc-process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Our Approach</div>
+          <h2 class="section-title" id="process-title">From opportunity assessment to <span class="gradient-text">optimized production agents</span></h2>
+          <p class="section-sub">A structured agent development engagement built from 200+ Salesforce and Oracle AI deployments.</p>
+        </div>
+
+        <div class="stage-rail" role="tablist" aria-label="AI agent development process steps">
+
+          <button class="stage-node is-active" data-stage="1" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1">
+            <span class="stage-node-circle">01</span>
+            <span class="stage-node-label">Assess</span>
+          </button>
+          <div class="stage-connector" aria-hidden="true"></div>
+
+          <button class="stage-node" data-stage="2" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2">
+            <span class="stage-node-circle">02</span>
+            <span class="stage-node-label">Design</span>
+          </button>
+          <div class="stage-connector" aria-hidden="true"></div>
+
+          <button class="stage-node" data-stage="3" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3">
+            <span class="stage-node-circle">03</span>
+            <span class="stage-node-label">Configure</span>
+          </button>
+          <div class="stage-connector" aria-hidden="true"></div>
+
+          <button class="stage-node" data-stage="4" role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4">
+            <span class="stage-node-circle">04</span>
+            <span class="stage-node-label">Test</span>
+          </button>
+          <div class="stage-connector" aria-hidden="true"></div>
+
+          <button class="stage-node" data-stage="5" role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5">
+            <span class="stage-node-circle">05</span>
+            <span class="stage-node-label">Deploy</span>
+          </button>
+          <div class="stage-connector" aria-hidden="true"></div>
+
+          <button class="stage-node" data-stage="6" role="tab" aria-selected="false" aria-controls="panel-6" id="tab-6">
+            <span class="stage-node-circle">06</span>
+            <span class="stage-node-label">Optimize</span>
+          </button>
+
+        </div>
+
+        <div class="stage-panels">
+
+          <div class="stage-panel is-active" data-panel="1" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+            <h3>Agent Opportunity Assessment</h3>
+            <p>We map automation opportunities across your revenue stack &mdash; identifying which processes are best suited for AI agents based on volume, structure, and ROI potential.</p>
+            <ul>
+              <li>Process automation mapping</li>
+              <li>Agent ROI scoring</li>
+              <li>Data readiness assessment</li>
+              <li>Agent scope definition</li>
+            </ul>
+          </div>
+
+          <div class="stage-panel" data-panel="2" id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+            <h3>Agent Architecture Design</h3>
+            <p>We design the agent topology &mdash; capabilities, data connections, action libraries, escalation patterns, and human oversight model &mdash; before development begins.</p>
+            <ul>
+              <li>Agent capability design</li>
+              <li>Action library definition</li>
+              <li>Data access architecture</li>
+              <li>Human-in-the-loop design</li>
+            </ul>
+          </div>
+
+          <div class="stage-panel" data-panel="3" id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+            <h3>Agent Configuration &amp; Build</h3>
+            <p>Using Agentforce low-code tools and custom API integrations, we build and configure agents &mdash; iterating in 2-week sprints with stakeholder demos and feedback.</p>
+            <ul>
+              <li>Agentforce configuration</li>
+              <li>Custom Apex &amp; API tools</li>
+              <li>Data integration setup</li>
+              <li>Sprint demos &amp; iteration</li>
+            </ul>
+          </div>
+
+          <div class="stage-panel" data-panel="4" id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+            <h3>AI Agent Testing (AITest)</h3>
+            <p>Forsys's AITest platform runs comprehensive agent testing &mdash; covering functional accuracy, edge cases, adversarial prompts, and load scenarios &mdash; ensuring agents are safe and reliable before go-live.</p>
+            <ul>
+              <li>Functional accuracy testing</li>
+              <li>Edge case &amp; adversarial testing</li>
+              <li>Performance &amp; load testing</li>
+              <li>UAT &amp; safety review</li>
+            </ul>
+          </div>
+
+          <div class="stage-panel" data-panel="5" id="panel-5" role="tabpanel" aria-labelledby="tab-5">
+            <h3>Production Agent Deployment</h3>
+            <p>Managed go-live with agent monitoring dashboards, user training, and a 90-day hypercare programme &mdash; ensuring agents deliver ROI from day one.</p>
+            <ul>
+              <li>Production deployment</li>
+              <li>Agent monitoring setup</li>
+              <li>User training &amp; enablement</li>
+              <li>Hypercare support</li>
+            </ul>
+          </div>
+
+          <div class="stage-panel" data-panel="6" id="panel-6" role="tabpanel" aria-labelledby="tab-6">
+            <h3>Continuous Agent Improvement</h3>
+            <p>Post-launch agent optimization &mdash; prompt refinement, model updates, new action development, and scope expansion &mdash; driven by production performance data and business feedback.</p>
+            <ul>
+              <li>Performance analytics review</li>
+              <li>Prompt &amp; model refinement</li>
+              <li>New action development</li>
+              <li>Agent scope expansion</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         5. BUSINESS OUTCOMES
+    ============================== -->
+    <section class="svc-outcomes" aria-labelledby="outcomes-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Business Outcomes</div>
+          <h2 class="section-title" id="outcomes-title"><span class="gradient-text">Measurable results</span> from every agent deployment</h2>
+          <p class="section-sub">Real outcomes from Forsys AI agent engagements across Salesforce and Oracle implementations.</p>
+        </div>
+        <div class="svc-outcome-grid">
+
+          <article class="svc-outcome-card">
+            <div class="svc-outcome-stat">4.8/5</div>
+            <p class="svc-outcome-desc">CSAT across all Agentforce implementations</p>
+            <div class="svc-outcome-client">Forsys Salesforce Summit Partner</div>
+          </article>
+
+          <article class="svc-outcome-card">
+            <div class="svc-outcome-stat">80%</div>
+            <p class="svc-outcome-desc">Reduction in manual task handling by deployed agents</p>
+            <div class="svc-outcome-client">Hi-Tech &mdash; Agentforce Sales</div>
+          </article>
+
+          <article class="svc-outcome-card">
+            <div class="svc-outcome-stat">37%</div>
+            <p class="svc-outcome-desc">Jump in win rate with AI-guided deal agents</p>
+            <div class="svc-outcome-client">Pharma Manufacturer &mdash; Agent Automation</div>
+          </article>
+
+          <article class="svc-outcome-card">
+            <div class="svc-outcome-stat">3 wks</div>
+            <p class="svc-outcome-desc">Average deployment time for standard Agentforce agents</p>
+            <div class="svc-outcome-client">SaaS &mdash; Agentforce Build</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         7. CASE STUDY TEASER
+    ============================== -->
+    <section class="svc-case-study" aria-labelledby="case-study-title">
+      <div class="container">
+        <div class="text-center section-header">
+          <div class="section-label">Client Success</div>
+          <h2 class="section-title" id="case-study-title">AI agents that deliver measurable <span class="gradient-text">revenue impact</span></h2>
+        </div>
+        <article class="story-card">
+          <div class="story-meta">
+            <span class="story-industry-tag">SaaS</span>
+          </div>
+          <h3 class="story-title">37% Win Rate Improvement with Agentforce Revenue Agents</h3>
+          <p class="story-desc">A SaaS enterprise engaged Forsys to build Agentforce autonomous agents for their Salesforce Revenue Cloud. We deployed agents for AI-guided deal pricing, renewal management, and contract amendment &mdash; eliminating manual RevOps bottlenecks and improving win rates by 37% in the first two quarters post-launch.</p>
+          <dl class="story-stats">
+            <div class="story-stat-item">
+              <dt class="story-stat-value">37%</dt>
+              <dd class="story-stat-label">Win rate improvement</dd>
+            </div>
+            <div class="story-stat-item">
+              <dt class="story-stat-value">80%</dt>
+              <dd class="story-stat-label">Manual task reduction</dd>
+            </div>
+            <div class="story-stat-item">
+              <dt class="story-stat-value">3 wks</dt>
+              <dd class="story-stat-label">Deployment time</dd>
+            </div>
+          </dl>
+          <a href="../resources/customer-stories.html" class="story-link">View all customer stories &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==============================
+         8. CTA STRIP
+    ============================== -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to deploy AI agents that <span class="gradient-text">work autonomously?</span></h2>
+        <p class="cta-sub">Start with a free Agent Opportunity Assessment. We'll identify your top 5 agent use cases and a 90-day deployment roadmap.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Book Your Agent Assessment &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises &mdash; 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="ai-agents-development.html">AI &amp; Agents Development</a></li>
+          <li><a href="ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="../forsys-solutions/revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

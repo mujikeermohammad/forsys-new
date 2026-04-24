@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinars &amp; Media | Forsys — On-Demand Sessions &amp; Expert Panels</title>
+  <meta name="description" content="Live sessions, on-demand recordings, and expert panels covering AI, revenue transformation, CPQ, CLM, and Salesforce best practices from Forsys specialists.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/resources.css">
+  <style>
+    /* ── Section headers ──────────────────────────────────── */
+    .res-section-label {
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+    .res-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.15;
+      letter-spacing: -0.024em;
+    }
+
+    /* ── Featured section ─────────────────────────────────── */
+    .res-featured-header {
+      margin-bottom: 36px;
+    }
+    .res-featured-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .res-featured-meta {
+      font-family: Inter, sans-serif;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .res-featured-meta-dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--border);
+      display: inline-block;
+    }
+
+    /* ── Register button (featured) ──────────────────────── */
+    .res-featured-register {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 13px 26px;
+      background: var(--gradient-ai);
+      color: #fff;
+      border-radius: var(--radius-pill);
+      font-family: Inter, sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .res-featured-register:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+    .res-featured-register:focus-visible {
+      outline: 2px solid var(--purple);
+      outline-offset: 2px;
+    }
+
+    /* ── Video thumb gradient overlay ────────────────────── */
+    .res-video-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(107,72,255,0.35) 0%, rgba(0,180,216,0.25) 100%);
+    }
+    .res-video-play {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Video type badge colours ─────────────────────────── */
+    .res-video-type--panel {
+      color: #0097B2;
+    }
+    .res-video-type--demo {
+      color: #16A34A;
+    }
+    .res-video-type--technical {
+      color: var(--purple);
+    }
+
+    /* ── Grid section header ──────────────────────────────── */
+    .res-grid-header {
+      margin-bottom: 0;
+    }
+
+    /* ── Responsive ───────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .res-featured-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+    @media (max-width: 768px) {
+      .res-featured-card { padding: 28px 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .res-featured-register { transition: none; }
+    }
+  </style>
+</head>
+<body class="page-resources">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img" height="30" loading="lazy">
+      </a>
+      <div class="nav-center" role="menubar">
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">What We Do <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="mega-menu mega-menu--wide" role="menu">
+            <div class="mega-grid mega-grid--wwd">
+              <div class="mega-col">
+                <div class="mega-col-title">Business Advisory</div>
+                <ul>
+                  <li><a href="../services/revenue-lifecycle-strategy.html" role="menuitem">Revenue Lifecycle Strategy<small>Lead-to-Revenue end-to-end process &amp; advisory</small></a></li>
+                  <li><a href="../services/build-or-buy-strategy.html" role="menuitem">Build or Buy Strategy<small>Assess Build vs Buy ROI with matured TCO matrix</small></a></li>
+                  <li><a href="../services/enterprise-ai-strategy.html" role="menuitem">Enterprise AI Strategy</a></li>
+                  <li><a href="../services/autonomous-commerce.html" role="menuitem">Autonomous Commerce<small>Agentic Buyer Journeys</small></a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Salesforce Solutions</div>
+                <ul>
+                  <li><a href="../solutions/salesforce/agentforce-crm.html" role="menuitem">Agentforce CRM<small>Sales, Service, Experience, Marketing</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-revenue-management.html" role="menuitem">Agentforce Revenue Management<small>Quote, Contract, Config, Assets, Billing, Orders</small></a></li>
+                  <li><a href="../solutions/salesforce/agentforce-commerce.html" role="menuitem">Agentforce Commerce</a></li>
+                  <li><a href="../solutions/salesforce/agentforce-platform.html" role="menuitem">Agentforce Platform<small>Data 360, Agents &amp; Custom Development</small></a></li>
+                  <li><a href="../solutions/salesforce/manufacturing-cloud.html" role="menuitem">Manufacturing Cloud</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--platform">
+                <div class="mega-col-title mega-col-title--platform">Conga + PROS B2B</div>
+                <ul>
+                  <li><a href="../solutions/conga-pros/revenue-and-commerce.html" role="menuitem">Revenue &amp; Commerce<small>Conga CPQ, Digital Commerce &amp; Billing</small></a></li>
+                  <li><a href="../solutions/conga-pros/contract-lifecycle-management.html" role="menuitem">Contract Lifecycle Management</a></li>
+                  <li><a href="../solutions/conga-pros/pros-smart-pricing.html" role="menuitem">PROS Smart Pricing Optimization</a></li>
+                  <li><a href="../solutions/conga-pros/pros-b2b.html" role="menuitem">PROS Smart CPQ</a></li>
+                </ul>
+                <div class="mega-sub-divider"></div>
+                <div class="mega-col-title mega-col-title--platform">Oracle Solutions</div>
+                <ul>
+                  <li><a href="../solutions/oracle/fusion-finance-accounting.html" role="menuitem">Fusion Finance &amp; Accounting</a></li>
+                  <li><a href="../solutions/oracle/fusion-supply-chain.html" role="menuitem">Fusion Supply Chain &amp; Manufacturing</a></li>
+                  <li><a href="../solutions/oracle/oic-paas.html" role="menuitem">OIC / PaaS</a></li>
+                  <li><a href="../solutions/oracle/bpa-aistudio.html" role="menuitem">Business Process Automation — AIStudio</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Services</div>
+                <div class="mega-sub-header">Technology</div>
+                <ul>
+                  <li><a href="../services/ai-application-development.html" role="menuitem">AI led Application Development</a></li>
+                  <li><a href="../services/ai-agents-development.html" role="menuitem">AI &amp; Agents Development</a></li>
+                  <li><a href="../services/integrations.html" role="menuitem">Integrations<small>MuleSoft, OIC, FloData</small></a></li>
+                  <li><a href="../services/data-migration.html" role="menuitem">Data Migration<small>FloData</small></a></li>
+                  <li><a href="../services/devops.html" role="menuitem">DevOps</a></li>
+                </ul>
+              </div>
+              <div class="mega-col mega-col--managed">
+                <div class="mega-col-title">AI Managed Services</div>
+                <ul><li><a href="../services/ai-enabled-managed-services.html" role="menuitem">AI Powered Managed Services</a></li></ul>
+              </div>
+              <div class="mega-col mega-col--ai">
+                <div class="mega-col-title">Forsys AI Solutions</div>
+                <ul>
+                  <li><a href="../forsys-solutions/revramp.html" role="menuitem">RevRamp<small>Fast &amp; Seamless CPQ Data Migration</small></a></li>
+                  <li><a href="../forsys-solutions/lexishift.html" role="menuitem">LexiShift<small>Intelligent Contract Data Extraction</small></a></li>
+                  <li><a href="../forsys-solutions/revmove.html" role="menuitem">RevMove<small>Platform Migration Intelligence</small></a></li>
+                  <li><a href="../forsys-solutions/mna-for-salesforce.html" role="menuitem">MnA for Salesforce<small>Salesforce Org Migration</small></a></li>
+                  <li><a href="../forsys-solutions/aitest.html" role="menuitem">AITest<small>AI-Powered Testing</small></a></li>
+                  <li><a href="../forsys-solutions/ai-agents.html" role="menuitem">AI Agents</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Industries <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../industries/hi-tech.html" role="menuitem">Hi-Tech</a>
+            <a href="../industries/financial-services.html" role="menuitem">Financial Services</a>
+            <a href="../industries/healthcare-life-sciences.html" role="menuitem">Healthcare &amp; Life Sciences</a>
+            <a href="../industries/manufacturing.html" role="menuitem">Manufacturing</a>
+            <a href="../industries/saas-subscription.html" role="menuitem">SaaS &amp; Subscription Businesses</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Partnerships <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <span class="dropdown-group-label">Strategic Partners</span>
+            <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
+            <a href="../partnerships/conga.html" role="menuitem">Conga</a>
+            <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-group-label">Technology Partners</span>
+            <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
+            <a href="../partnerships/provus.html" role="menuitem">Provus</a>
+            <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
+            <a href="../partnerships/servicenow.html" role="menuitem">ServiceNow</a>
+            <a href="../partnerships/flosum.html" role="menuitem">Flosum</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../resources/customer-stories.html" role="menuitem">Customer Stories</a>
+            <a href="../resources/thought-leadership.html" role="menuitem">Thought Leadership</a>
+            <a href="../resources/webinars-media.html" role="menuitem" aria-current="page">Webinars &amp; Media</a>
+            <a href="../resources/blogs.html" role="menuitem">Blogs</a>
+            <a href="../resources/events.html" role="menuitem">Events</a>
+          </div>
+        </div>
+        <div class="nav-item" role="none">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false" role="menuitem">Company <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="../company/about.html" role="menuitem">About Forsys</a>
+            <a href="../company/leadership.html" role="menuitem">Leadership</a>
+            <a href="../company/culture.html" role="menuitem">Culture</a>
+            <a href="../company/careers.html" role="menuitem">Careers</a>
+            <a href="../company/news-press.html" role="menuitem">News &amp; Press</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="../company/about.html" class="btn-nav-ghost">About</a>
+        <a href="mailto:info@forsysinc.com" class="btn-nav-primary">Contact Us</a>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="res-hero" aria-labelledby="hero-title">
+      <div class="res-hero-inner">
+        <div class="res-hero-eyebrow">Resources</div>
+        <h1 class="res-hero-title" id="hero-title">Webinars &amp; <span class="gradient-text">Media</span></h1>
+        <p class="res-hero-desc">Live sessions, on-demand recordings, and expert panels covering AI, revenue transformation, CPQ, CLM, and Salesforce best practices from Forsys specialists.</p>
+      </div>
+    </section>
+
+    <!-- 2. Filter Bar -->
+    <section class="res-filter" aria-label="Filter webinars and media">
+      <div class="res-filter-inner">
+        <span class="res-filter-label">Filter:</span>
+        <button class="res-filter-btn is-active" type="button">All</button>
+        <button class="res-filter-btn" type="button">On-Demand</button>
+        <button class="res-filter-btn" type="button">Upcoming</button>
+        <button class="res-filter-btn" type="button">AI &amp; Automation</button>
+        <button class="res-filter-btn" type="button">CPQ</button>
+        <button class="res-filter-btn" type="button">CLM</button>
+        <button class="res-filter-btn" type="button">Oracle</button>
+        <button class="res-filter-btn" type="button">Panel Discussions</button>
+      </div>
+    </section>
+
+    <!-- 3. Upcoming Webinar Spotlight -->
+    <section class="res-featured" aria-labelledby="featured-title">
+      <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 48px;">
+        <div class="res-featured-header">
+          <div class="res-section-label">Coming Up Next</div>
+          <h2 class="res-section-title" id="featured-title">Live Webinar: <span class="gradient-text">Agentforce in Action</span></h2>
+        </div>
+        <div class="res-featured-card" style="margin-top: 36px;">
+
+          <!-- Left: webinar details -->
+          <div class="res-featured-left">
+            <div class="res-featured-eyebrow">Upcoming &middot; May 2026</div>
+            <h3 class="res-featured-title">Deploying AI Agents in Salesforce: A Live Implementation Walkthrough</h3>
+            <p class="res-featured-desc">Join Forsys Agentforce specialists for a 60-minute live session covering real-world Agentforce deployment patterns, common implementation challenges, and a live demo of autonomous agent workflows in a production-like Salesforce environment.</p>
+            <div class="res-featured-meta">
+              <span>May 14, 2026</span>
+              <span class="res-featured-meta-dot" aria-hidden="true"></span>
+              <span>11:00 AM EST</span>
+              <span class="res-featured-meta-dot" aria-hidden="true"></span>
+              <span>60 min</span>
+            </div>
+            <a href="../company/about.html#contact" class="res-featured-register" aria-label="Register for the Agentforce live webinar on May 14, 2026">
+              Register Now
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Right: stats grid -->
+          <div class="res-featured-stats" aria-label="Session details">
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num">60</div>
+              <div class="res-featured-stat-desc">Minutes of Expert Content</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num gradient-text">Live</div>
+              <div class="res-featured-stat-desc">Interactive Q&amp;A Session</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num gradient-text">Free</div>
+              <div class="res-featured-stat-desc">Registration Required</div>
+            </div>
+            <div class="res-featured-stat">
+              <div class="res-featured-stat-num gradient-text">On-Demand</div>
+              <div class="res-featured-stat-desc">Available After Live Date</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Video Grid -->
+    <section class="res-grid-section" aria-labelledby="video-grid-title">
+      <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 48px;">
+        <div class="res-grid-header">
+          <div class="res-section-label">On-Demand Library</div>
+          <h2 class="res-section-title" id="video-grid-title">Watch Our <span class="gradient-text">Latest Sessions</span></h2>
+        </div>
+        <div class="res-video-grid" role="list">
+
+          <!-- Video 1 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type">Webinar</div>
+              <h3 class="res-video-title">CPQ Modernization: From Oracle to Salesforce in 90 Days</h3>
+              <p class="res-video-desc">Forsys engineers walk through the RevRamp migration framework and share lessons from real CPQ migration engagements.</p>
+            </div>
+          </article>
+
+          <!-- Video 2 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--panel">Panel Discussion</div>
+              <h3 class="res-video-title">AI-Native Revenue Operations: A CFO &amp; CRO Perspective</h3>
+              <p class="res-video-desc">Industry leaders discuss how AI is reshaping revenue forecasting, deal velocity, and revenue recognition across the enterprise.</p>
+            </div>
+          </article>
+
+          <!-- Video 3 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--technical">Technical Session</div>
+              <h3 class="res-video-title">Conga CLM Deep Dive: Configuring AI Contract Intelligence</h3>
+              <p class="res-video-desc">Step-by-step configuration walkthrough of Conga CLM's AI clause extraction, automated negotiation, and eSignature workflows.</p>
+            </div>
+          </article>
+
+          <!-- Video 4 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type">Webinar</div>
+              <h3 class="res-video-title">MuleSoft Integration Patterns for Revenue Systems</h3>
+              <p class="res-video-desc">API-led integration architecture for connecting Salesforce, Oracle, Conga, and billing systems — with live MuleSoft Anypoint demos.</p>
+            </div>
+          </article>
+
+          <!-- Video 5 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--demo">Demo</div>
+              <h3 class="res-video-title">LexiShift Live Demo: Extracting Contract Data in Real Time</h3>
+              <p class="res-video-desc">Watch LexiShift process a batch of legacy PDF contracts and output structured CLM-ready data in under 10 minutes.</p>
+            </div>
+          </article>
+
+          <!-- Video 6 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--technical">Webinar</div>
+              <h3 class="res-video-title">Oracle Fusion Cloud: Planning Your EBS Migration</h3>
+              <p class="res-video-desc">Forsys Oracle practice leaders share a practical migration framework for Oracle EBS to Fusion Cloud — including data strategy and integration architecture.</p>
+            </div>
+          </article>
+
+          <!-- Video 7 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--panel">Panel Discussion</div>
+              <h3 class="res-video-title">The Future of Subscription Billing: Conga, Salesforce &amp; m3ter</h3>
+              <p class="res-video-desc">Experts from Forsys, Salesforce Revenue Cloud, and m3ter discuss the convergence of CPQ, billing, and usage-based monetization.</p>
+            </div>
+          </article>
+
+          <!-- Video 8 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type res-video-type--technical">Technical Session</div>
+              <h3 class="res-video-title">AITest in Practice: CI/CD Testing for Salesforce CPQ</h3>
+              <p class="res-video-desc">Forsys QA engineers demonstrate how AITest reduces Salesforce CPQ regression testing from 3 weeks to 2 hours using AI-generated test cases.</p>
+            </div>
+          </article>
+
+          <!-- Video 9 -->
+          <article class="res-video-card" role="listitem">
+            <div class="res-video-thumb" aria-hidden="true">
+              <div class="res-video-thumb-overlay"></div>
+              <div class="res-video-play" aria-label="Play video">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+                </svg>
+              </div>
+            </div>
+            <div class="res-video-body">
+              <div class="res-video-type">Webinar</div>
+              <h3 class="res-video-title">Manufacturing Cloud 101: Dealer Networks &amp; Sales Agreements</h3>
+              <p class="res-video-desc">A practical introduction to Salesforce Manufacturing Cloud for dealer management, account-based forecasting, and sales agreement automation.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="cta-inner">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <h2 class="cta-title" id="cta-title">Ready to go beyond the <span class="gradient-text">Webinar?</span></h2>
+        <p class="cta-sub">Connect with a Forsys expert and turn insights from our sessions into your transformation roadmap.</p>
+        <div class="cta-btns">
+          <a href="mailto:info@forsysinc.com" class="btn-cta-white">Schedule a Consultation &rarr;</a>
+          <a href="../resources/customer-stories.html" class="btn-cta-outline">View Customer Stories</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo">
+          <img src="../assets/images/Forsys_Logo.svg" alt="Forsys" class="nav-logo-img footer-logo-img" height="30" loading="lazy">
+        </a>
+        <p>AI Native. AI Fast. The Lead-to-Revenue transformation partner for modern enterprises — 500+ engagements, 250+ global customers, 1,000+ specialists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>What We Do</h4>
+        <ul>
+          <li><a href="../services/revenue-lifecycle-strategy.html">Revenue Lifecycle Strategy</a></li>
+          <li><a href="../services/enterprise-ai-strategy.html">Enterprise AI Strategy</a></li>
+          <li><a href="../services/ai-application-development.html">AI Application Development</a></li>
+          <li><a href="../services/ai-enabled-managed-services.html">AI Managed Services</a></li>
+          <li><a href="../forsys-solutions/revramp.html">Forsys AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="../industries/hi-tech.html">Hi-Tech</a></li>
+          <li><a href="../industries/financial-services.html">Financial Services</a></li>
+          <li><a href="../industries/healthcare-life-sciences.html">Healthcare &amp; Life Sciences</a></li>
+          <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+          <li><a href="../industries/saas-subscription.html">SaaS &amp; Subscriptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
+          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
+          <li><a href="../resources/webinars-media.html">Webinars &amp; Media</a></li>
+          <li><a href="../resources/blogs.html">Blogs</a></li>
+          <li><a href="../resources/events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../company/about.html">About Forsys</a></li>
+          <li><a href="../company/leadership.html">Leadership</a></li>
+          <li><a href="../company/culture.html">Culture</a></li>
+          <li><a href="../company/careers.html">Careers</a></li>
+          <li><a href="../company/news-press.html">News &amp; Press</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Forsys Inc. All rights reserved. &nbsp;&middot;&nbsp; info@forsysinc.com</span>
+      <span class="footer-tagline">AI Native &middot; AI Fast &middot; Revenue Transformed</span>
+      <span>Privacy &nbsp;&middot;&nbsp; Terms</span>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
