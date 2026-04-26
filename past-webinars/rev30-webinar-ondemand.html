@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,13 +26,13 @@
     .vod-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(236, 238, 255, 0.88);
+      background: transparent;
       z-index: 9000;
       display: flex;
       align-items: center;
       justify-content: center;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
     }
 
     .vod-form-box {
@@ -136,6 +136,14 @@
       transform: translateY(-2px) !important;
     }
 
+
+    .vod-form-box .hbspt-form,
+    .vod-form-box form,
+    .vod-form-box .hs-form,
+    .vod-form-box fieldset {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
     .vod-form-box input.hs-button:focus-visible,
     .vod-form-box .actions input[type="submit"]:focus-visible {
       outline: 2px solid #6B48FF !important;
