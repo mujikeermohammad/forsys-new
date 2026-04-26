@@ -222,7 +222,9 @@
     }
 
     @keyframes vod-spin {
-      to { transform: rotate(360deg); }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* API-level error */
@@ -508,10 +510,21 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .vod-btn-spinner { animation: none; }
-      .vod-submit-btn { transition: none; }
-      .vod-play-btn { transition: none; }
-      .vod-back-btn { transition: none; }
+      .vod-btn-spinner {
+        animation: none;
+      }
+
+      .vod-submit-btn {
+        transition: none;
+      }
+
+      .vod-play-btn {
+        transition: none;
+      }
+
+      .vod-back-btn {
+        transition: none;
+      }
     }
   </style>
 
@@ -544,14 +557,14 @@
         <div class="vod-form-grid">
           <div class="vod-field" id="field-firstname">
             <label for="vod-firstname">First Name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="vod-firstname" name="firstname" placeholder="Jane"
-              autocomplete="given-name" required>
+            <input type="text" id="vod-firstname" name="firstname" placeholder="Jane" autocomplete="given-name"
+              required>
             <span class="vod-field-error" role="alert">Please enter your first name.</span>
           </div>
           <div class="vod-field" id="field-lastname">
             <label for="vod-lastname">Last Name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="vod-lastname" name="lastname" placeholder="Smith"
-              autocomplete="family-name" required>
+            <input type="text" id="vod-lastname" name="lastname" placeholder="Smith" autocomplete="family-name"
+              required>
             <span class="vod-field-error" role="alert">Please enter your last name.</span>
           </div>
         </div>
@@ -559,14 +572,14 @@
         <div class="vod-form-grid">
           <div class="vod-field" id="field-email">
             <label for="vod-email">Work Email <span class="req" aria-hidden="true">*</span></label>
-            <input type="email" id="vod-email" name="email" placeholder="jane@company.com"
-              autocomplete="email" required>
+            <input type="email" id="vod-email" name="email" placeholder="jane@company.com" autocomplete="email"
+              required>
             <span class="vod-field-error" role="alert">Please enter a valid work email address.</span>
           </div>
           <div class="vod-field" id="field-company">
             <label for="vod-company">Company Name <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="vod-company" name="company" placeholder="Acme Corp"
-              autocomplete="organization" required>
+            <input type="text" id="vod-company" name="company" placeholder="Acme Corp" autocomplete="organization"
+              required>
             <span class="vod-field-error" role="alert">Please enter your company name.</span>
           </div>
         </div>
@@ -751,7 +764,7 @@
             <a href="../partnerships/salesforce.html" role="menuitem">Salesforce</a>
             <a href="../partnerships/conga.html" role="menuitem">Conga</a>
             <a href="../partnerships/oracle.html" role="menuitem">Oracle</a>
-          <a href="../partnerships/anthropic.html" role="menuitem">Anthropic</a>
+            <a href="../partnerships/anthropic.html" role="menuitem">Anthropic</a>
             <a href="../partnerships/rocketlane.html" role="menuitem">RocketLane</a>
             <a href="../partnerships/provus.html" role="menuitem">Provus</a>
             <a href="../partnerships/m3ter.html" role="menuitem">M3ter</a>
@@ -875,9 +888,7 @@
         <h4>Resources</h4>
         <ul>
           <li><a href="../resources/customer-stories.html">Customer Stories</a></li>
-          <li><a href="../resources/thought-leadership.html">Thought Leadership</a></li>
-          <li><a href="../resources/events.html">Webinars &amp; Media</a></li>
-          <li><a href="../resources/events.html">Events</a></li>
+          <li><a href="../resources/events.html">Webinars &amp; Events</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -931,12 +942,12 @@
   <script>
     (function () {
       var PORTAL_ID = '3988816';
-      var FORM_ID   = '2e8240f4-f59e-46f8-a322-d78f01bd8253';
-      var HS_URL    = 'https://api.hsforms.com/submissions/v3/integration/submit/' + PORTAL_ID + '/' + FORM_ID;
+      var FORM_ID = '2e8240f4-f59e-46f8-a322-d78f01bd8253';
+      var HS_URL = 'https://api.hsforms.com/submissions/v3/integration/submit/' + PORTAL_ID + '/' + FORM_ID;
 
       /* ── Unlock video after form clears ─────────────────────────────── */
       function unlockVideo() {
-        var overlay      = document.getElementById('vod-overlay');
+        var overlay = document.getElementById('vod-overlay');
         var videoSection = document.getElementById('vod-video-section');
         if (overlay) overlay.style.display = 'none';
         if (videoSection) {
@@ -949,10 +960,10 @@
       function validate(form) {
         var ok = true;
         form.querySelectorAll('input[required]').forEach(function (inp) {
-          var wrap    = inp.closest('.vod-field');
-          var empty   = inp.value.trim() === '';
+          var wrap = inp.closest('.vod-field');
+          var empty = inp.value.trim() === '';
           var badEmail = inp.type === 'email' && !empty &&
-                         !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value.trim());
+            !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value.trim());
           if (empty || badEmail) {
             wrap.classList.add('show-error');
             inp.classList.add('is-invalid');
@@ -967,10 +978,10 @@
 
       /* ── Form submit → HubSpot API ───────────────────────────────────── */
       document.addEventListener('DOMContentLoaded', function () {
-        var form       = document.getElementById('vod-gate-form');
-        var btn        = document.getElementById('vod-submit-btn');
-        var btnText    = btn ? btn.querySelector('.vod-btn-text') : null;
-        var apiError   = document.getElementById('vod-api-error');
+        var form = document.getElementById('vod-gate-form');
+        var btn = document.getElementById('vod-submit-btn');
+        var btnText = btn ? btn.querySelector('.vod-btn-text') : null;
+        var apiError = document.getElementById('vod-api-error');
         var successPanel = document.getElementById('vod-form-success');
 
         if (!form) return;
@@ -1004,38 +1015,38 @@
             submittedAt: Date.now(),
             fields: [
               { objectTypeId: '0-1', name: 'firstname', value: form.querySelector('[name="firstname"]').value.trim() },
-              { objectTypeId: '0-1', name: 'lastname',  value: form.querySelector('[name="lastname"]').value.trim() },
-              { objectTypeId: '0-1', name: 'email',     value: form.querySelector('[name="email"]').value.trim() },
-              { objectTypeId: '0-1', name: 'company',   value: form.querySelector('[name="company"]').value.trim() },
-              { objectTypeId: '0-1', name: 'jobtitle',  value: form.querySelector('[name="jobtitle"]').value.trim() }
+              { objectTypeId: '0-1', name: 'lastname', value: form.querySelector('[name="lastname"]').value.trim() },
+              { objectTypeId: '0-1', name: 'email', value: form.querySelector('[name="email"]').value.trim() },
+              { objectTypeId: '0-1', name: 'company', value: form.querySelector('[name="company"]').value.trim() },
+              { objectTypeId: '0-1', name: 'jobtitle', value: form.querySelector('[name="jobtitle"]').value.trim() }
             ],
             context: {
-              pageUri:  window.location.href,
+              pageUri: window.location.href,
               pageName: document.title
             }
           };
 
           fetch(HS_URL, {
-            method:  'POST',
+            method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body:    JSON.stringify(payload)
+            body: JSON.stringify(payload)
           })
-          .then(function (res) {
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            return res.json();
-          })
-          .then(function () {
-            /* Show success, hide form, unlock video after brief delay */
-            form.style.display = 'none';
-            if (successPanel) successPanel.classList.add('visible');
-            setTimeout(unlockVideo, 1800);
-          })
-          .catch(function () {
-            btn.disabled = false;
-            btn.classList.remove('loading');
-            if (btnText) btnText.textContent = 'Watch the Webinar';
-            if (apiError) apiError.classList.add('visible');
-          });
+            .then(function (res) {
+              if (!res.ok) throw new Error('HTTP ' + res.status);
+              return res.json();
+            })
+            .then(function () {
+              /* Show success, hide form, unlock video after brief delay */
+              form.style.display = 'none';
+              if (successPanel) successPanel.classList.add('visible');
+              setTimeout(unlockVideo, 1800);
+            })
+            .catch(function () {
+              btn.disabled = false;
+              btn.classList.remove('loading');
+              if (btnText) btnText.textContent = 'Watch the Webinar';
+              if (apiError) apiError.classList.add('visible');
+            });
         });
 
         /* Focus trap while overlay is open */
@@ -1048,26 +1059,26 @@
           var first = focusable[0], last = focusable[focusable.length - 1];
           if (e.key === 'Tab') {
             if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
-            else            { if (document.activeElement === last)  { e.preventDefault(); first.focus(); } }
+            else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
           }
         });
       });
 
       /* ── Video facade (lazy-load player on click) ────────────────────── */
       function activateFacade() {
-        var wrap   = document.getElementById('vod-player-wrap');
+        var wrap = document.getElementById('vod-player-wrap');
         var facade = document.getElementById('vod-facade');
         if (!wrap || !facade) return;
         facade.removeEventListener('click', activateFacade);
         facade.removeEventListener('keydown', facadeKeydown);
-        var video  = document.createElement('video');
-        video.className   = 'vod-player';
-        video.controls    = true;
+        var video = document.createElement('video');
+        video.className = 'vod-player';
+        video.controls = true;
         video.playsinline = true;
-        video.autoplay    = true;
+        video.autoplay = true;
         video.setAttribute('aria-label', 'Rev 3.0 webinar recording');
-        var src  = document.createElement('source');
-        src.src  = 'https://www.forsysinc.com/rev3-0-webinar-ondemand-video.mp4';
+        var src = document.createElement('source');
+        src.src = 'https://www.forsysinc.com/rev3-0-webinar-ondemand-video.mp4';
         src.type = 'video/mp4';
         video.appendChild(src);
         wrap.replaceChild(video, facade);
