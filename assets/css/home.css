@@ -458,8 +458,8 @@
 /* ── RESOURCES ───────────────────────────────────────────── */
 .resources { background: var(--white); }
 .resources-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
-  max-width: var(--container-max); margin: 0 auto;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+  max-width: 860px; margin: 0 auto;
 }
 .resource-card {
   background: var(--bg); border: 1.5px solid var(--border);
@@ -569,7 +569,7 @@
   .result-item:nth-child(3) { border-top: 1px solid var(--border); }
   .result-item:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
   .partner-grid--others { grid-template-columns: repeat(3, 1fr); }
-  .resources-grid { grid-template-columns: repeat(3, 1fr); }
+  .resources-grid { grid-template-columns: repeat(2, 1fr); }
   .company-layout { grid-template-columns: 1fr; gap: 36px; }
 }
 @media (max-width: 768px) {
